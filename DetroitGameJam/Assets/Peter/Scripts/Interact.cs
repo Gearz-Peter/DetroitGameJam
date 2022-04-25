@@ -6,6 +6,9 @@ public class Interact : MonoBehaviour
 {
     private bool inRange = false;
 
+    private Collider2D NPCcollider;
+    private NPCInformation info;
+
     [SerializeField] private Canvas canvas;
 
     // Start is called before the first frame update
@@ -19,7 +22,19 @@ public class Interact : MonoBehaviour
     {
         if (Input.GetKeyDown("f") && inRange)
         {
-            Debug.Log("Interact");
+            GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = false;
+            info = NPCcollider.GetComponentInParent<NPCInformation>();
+            if (info.DialogueState >= info.Dialogue.Length)
+            {
+                info.DialogueState--;
+                GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = true;
+                canvas.GetComponent<TextManager>().RemoveText();
+            }
+            else
+            {
+                canvas.GetComponent<TextManager>().DisplayText(info.Dialogue[info.DialogueState]);
+                info.DialogueState++;
+            }
         }
     }
 
@@ -27,9 +42,9 @@ public class Interact : MonoBehaviour
     {
         if (collider.tag == "NPC")
         {
+            NPCcollider = collider;
             inRange = true;
             canvas.GetComponent<TextManager>().DisplayText("Press F to Interact!");
-            Debug.Log("start interact prompt");
         }
     }
 
@@ -37,9 +52,9 @@ public class Interact : MonoBehaviour
     {
         if (collider.tag == "NPC")
         {
+            NPCcollider = null;
             inRange = false;
             canvas.GetComponent<TextManager>().RemoveText();
-            Debug.Log("end interact prompt");
         }
     }
 }
