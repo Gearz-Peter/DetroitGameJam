@@ -1,19 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Encounter : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Canvas canvas;
+    [SerializeField] private Image encounterImage;
 
-    // Update is called once per frame
-    void Update()
+    void start()
     {
-        
+        encounterImage.enabled = false;
     }
 
     void OnTriggerEnter2D(Collider2D collider)
@@ -27,6 +24,16 @@ public class Encounter : MonoBehaviour
     void DoEncounter()
     {
         Debug.Log("Encounter");
+        canvas.GetComponent<TextManager>().DisplayText("Some Enemies Have Appeared!");
+        encounterImage.enabled = true;
         GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = false;
+        StartCoroutine(EncounterCooroutine());
+    }
+
+    IEnumerator EncounterCooroutine()
+    {
+        yield return new WaitForSeconds(1f);
+        encounterImage.enabled = false;
+        canvas.GetComponent<TextManager>().RemoveText();
     }
 }

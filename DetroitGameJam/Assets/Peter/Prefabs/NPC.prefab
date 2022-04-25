@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3252825601976332361}
   - component: {fileID: 8001485248452867620}
   - component: {fileID: 8893213009174707650}
+  - component: {fileID: 2448239475159524139}
+  - component: {fileID: 2346637011685949330}
   m_Layer: 0
   m_Name: NPC
   m_TagString: NPC
@@ -109,3 +111,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2448239475159524139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5667613014421622925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958cacef2cedebd4fa7a400fe6dbe83f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCName: 
+  ID: 0
+  DialogueState: 0
+  Dialogue: []
+--- !u!58 &2346637011685949330
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5667613014421622925}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.2
