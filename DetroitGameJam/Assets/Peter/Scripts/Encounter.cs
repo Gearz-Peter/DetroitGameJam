@@ -27,10 +27,10 @@ public class Encounter : MonoBehaviour
         canvas.GetComponent<TextManager>().DisplayText("Some Enemies Have Appeared!");
         encounterImage.enabled = true;
         GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = false;
-        StartCoroutine(EncounterCooroutine());
+        StartCoroutine(EncounterCoroutine());
     }
 
-    IEnumerator EncounterCooroutine()
+    IEnumerator EncounterCoroutine()
     {
         yield return new WaitForSeconds(1f);
         encounterImage.enabled = false;
