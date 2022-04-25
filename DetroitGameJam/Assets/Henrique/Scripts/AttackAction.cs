@@ -11,7 +11,9 @@ public class AttackAction : MonoBehaviour
 
     [SerializeField] string[] attackText;
 
-    [SerializeField] GameObject MenuHub;
+    [SerializeField] GameObject MenuHub,SelectHub;
+
+
 
     private void Update()
     {
@@ -45,6 +47,11 @@ public class AttackAction : MonoBehaviour
                 if(attackText[i] == CurrentText)
                 {
                     nonvalid = false;
+                    
+                    SelectHub.SetActive(true);
+                    Debug.Log(i);
+                    SelectHub.GetComponent<SelectEnemyAction>().AttackType = i;
+                    gameObject.SetActive(false);
 
                 }
             }
