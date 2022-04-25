@@ -6,6 +6,8 @@ public class Interact : MonoBehaviour
 {
     private bool inRange = false;
 
+    [SerializeField] private Canvas canvas;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class Interact : MonoBehaviour
         if (collider.tag == "NPC")
         {
             inRange = true;
+            canvas.GetComponent<TextManager>().DisplayText("Press F to Interact!");
             Debug.Log("start interact prompt");
         }
     }
@@ -35,6 +38,7 @@ public class Interact : MonoBehaviour
         if (collider.tag == "NPC")
         {
             inRange = false;
+            canvas.GetComponent<TextManager>().RemoveText();
             Debug.Log("end interact prompt");
         }
     }
