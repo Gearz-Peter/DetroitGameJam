@@ -3,66 +3,53 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class TypeAction : MonoBehaviour
 {
     [SerializeField] InputField TextField;
-    int MenuIndex=0;
-    string CurrentText; 
+   
+    string CurrentText;
 
-
+    [SerializeField] GameObject AttackHub;
     
 
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Return))
         {
-            CheckType();
+            MenuSelect();
         }
     }
 
-    void CheckType()
+
+    private void OnEnable()
     {
-        CurrentText = TextField.text.ToLower();
-
-
-       switch(MenuIndex)
-        {
-            case 0:
-                MenuSelect();
-                break;
-            case 1:
-
-                break;
-        }
-
+        TextField.ActivateInputField();
 
     }
-
 
     void MenuSelect()
     {
+        CurrentText = TextField.text.ToLower();
+        TextField.text = "";
 
-        switch(CurrentText)
+        switch (CurrentText)
         {
             case "attack":
-                MenuIndex = 1;
-                AttackSelect();
+                AttackHub.SetActive(true);
+                gameObject.SetActive(false);
                 break;
             case "switch":
-                MenuIndex = 2;
+               
                 break;
             case "item":
-                MenuIndex = 3;
+                break;
+            default:
+                TextField.ActivateInputField();
                 break;
         }
+        
     }
-
-
-    void AttackSelect()
-    {
-
-    }
-
 
 
 

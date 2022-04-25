@@ -56,10 +56,13 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Peter\Scripts\PeterDefaultScript.cs" />
     <Compile Include="Assets\Henrique\Scripts\HenriqueDefaultScript.cs" />
     <Compile Include="Assets\Main\Scripts\DefaultScript.cs" />
+    <Compile Include="Assets\Peter\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Henrique\Scripts\TypeAction.cs" />
+    <Compile Include="Assets\Peter\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Henrique\Scripts\AttackAction.cs" />
+    <Compile Include="Assets\Henrique\Scripts\SelectEnemyAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
