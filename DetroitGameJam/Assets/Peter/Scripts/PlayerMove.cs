@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
 
     [SerializeField] private float movementSpeed = 6.36f;
 
-    [SerializeField] private bool isMovementEnabled = true;
+    [SerializeField] public bool isMovementEnabled = true;
 
     private void Awake()
     {
@@ -16,7 +16,7 @@ public class PlayerMove : MonoBehaviour
     }
 
     void Update() // Once per frame
-    { 
+    {
 
     }
 
@@ -30,6 +30,10 @@ public class PlayerMove : MonoBehaviour
         if (isMovementEnabled)
         {
             PlayerBody.velocity = new Vector2(Input.GetAxis("Horizontal") * movementSpeed, Input.GetAxis("Vertical") * movementSpeed);
+        }
+        if (!isMovementEnabled)
+        {
+            PlayerBody.velocity = new Vector2(0, 0);
         }
     }
 }

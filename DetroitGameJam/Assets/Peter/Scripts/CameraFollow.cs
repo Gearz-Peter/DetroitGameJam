@@ -19,7 +19,7 @@ public class CameraFollow : MonoBehaviour
         ymin = mapBounds.GetComponent<BoxCollider2D>().bounds.min.y;
         ymax = mapBounds.GetComponent<BoxCollider2D>().bounds.max.y;
         camHeight = this.GetComponent<Camera>().orthographicSize;
-        camWidth = camHeight * (this.GetComponent<Camera>().pixelWidth / this.GetComponent<Camera>().pixelHeight);
+        camWidth = camHeight * this.GetComponent<Camera>().aspect;
     }
 
     void Update()
