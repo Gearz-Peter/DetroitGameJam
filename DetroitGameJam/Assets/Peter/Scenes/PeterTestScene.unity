@@ -1645,17 +1645,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &942823680 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4754404260886862161, guid: 15a7d25a7fed9074f91ca486a1dde113, type: 3}
-  m_PrefabInstance: {fileID: 1599061281308386675}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1005203946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2085,17 +2074,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
---- !u!114 &1363614282 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1664458041897185531, guid: 15a7d25a7fed9074f91ca486a1dde113, type: 3}
-  m_PrefabInstance: {fileID: 1599061281308386675}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1366916286
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,6 +3602,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuestItems: []
   canvas: {fileID: 2057001525}
+--- !u!114 &2116897353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2116897345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c43a6034c7e810b488a39d83e1503877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flip: 0
 --- !u!1 &2124118127
 GameObject:
   m_ObjectHideFlags: 0
@@ -3818,6 +3809,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d4ee23360efdee4faae5ca781dcfa9e, type: 3}
+--- !u!114 &83411178564703624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1664458041897185531, guid: 15a7d25a7fed9074f91ca486a1dde113, type: 3}
+  m_PrefabInstance: {fileID: 1599061281308386675}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &185370219248748393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4134,14 +4136,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1599061280342998849, guid: 15a7d25a7fed9074f91ca486a1dde113, type: 3}
+      propertyPath: m_TagString
+      value: OverworldCanvas
+      objectReference: {fileID: 0}
     - target: {fileID: 1599061280342998852, guid: 15a7d25a7fed9074f91ca486a1dde113, type: 3}
       propertyPath: nameTMP
       value: 
-      objectReference: {fileID: 1363614282}
+      objectReference: {fileID: 83411178564703624}
     - target: {fileID: 1599061280342998852, guid: 15a7d25a7fed9074f91ca486a1dde113, type: 3}
       propertyPath: nameImage
       value: 
-      objectReference: {fileID: 942823680}
+      objectReference: {fileID: 6325878243542203426}
     - target: {fileID: 1599061280342998853, guid: 15a7d25a7fed9074f91ca486a1dde113, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5017,6 +5023,17 @@ PrefabInstance:
       objectReference: {fileID: 2057001525}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04ec7b4065f0ad24f908b85cda9c5dc8, type: 3}
+--- !u!114 &6325878243542203426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4754404260886862161, guid: 15a7d25a7fed9074f91ca486a1dde113, type: 3}
+  m_PrefabInstance: {fileID: 1599061281308386675}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6875136419055527499
 PrefabInstance:
   m_ObjectHideFlags: 0
