@@ -9,6 +9,7 @@ TagManager:
   - NPC
   - Item
   - QuestItem
+  - OverworldCanvas
   layers:
   - Default
   - TransparentFX
