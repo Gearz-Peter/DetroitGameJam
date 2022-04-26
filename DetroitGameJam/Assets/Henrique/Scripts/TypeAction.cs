@@ -10,7 +10,7 @@ public class TypeAction : MonoBehaviour
    
     string CurrentText;
 
-    [SerializeField] GameObject AttackHub;
+    [SerializeField] GameObject AttackHub,SwitcHub;
     
 
     private void Update()
@@ -40,7 +40,8 @@ public class TypeAction : MonoBehaviour
                 gameObject.SetActive(false);
                 break;
             case "switch":
-               
+                SwitcHub.SetActive(true);
+                gameObject.SetActive(false);
                 break;
             case "item":
                 break;

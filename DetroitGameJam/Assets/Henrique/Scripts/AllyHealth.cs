@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class EnemyHealth : MonoBehaviour
+public class AllyHealth : MonoBehaviour
 {
    public int Health;
     [SerializeField] int MaxHealth;
-    
+
     [SerializeField] Slider HealthSlider;
 
     private void Start()
@@ -21,4 +21,7 @@ public class EnemyHealth : MonoBehaviour
         HealthSlider.value = Health;
 
     }
+
+
+
 }
