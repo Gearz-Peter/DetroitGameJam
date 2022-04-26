@@ -24,16 +24,6 @@ public class Encounter : MonoBehaviour
     void DoEncounter()
     {
         Debug.Log("Encounter");
-        canvas.GetComponent<TextManager>().DisplayText("Some Enemies Have Appeared!","");
-        encounterImage.enabled = true;
-        GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = false;
-        StartCoroutine(EncounterCoroutine());
-    }
-
-    IEnumerator EncounterCoroutine()
-    {
-        yield return new WaitForSeconds(3f);
-        encounterImage.enabled = false;
-        canvas.GetComponent<TextManager>().RemoveText();
+        GameObject.FindWithTag("Player").GetComponent<EnableDisable>().flip = true;
     }
 }

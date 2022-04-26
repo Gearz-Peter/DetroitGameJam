@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Interact : MonoBehaviour
 {
+    public bool inConvo = false;
+
     private bool inRange = false;
 
     private Collider2D NPCcollider;
@@ -14,8 +16,9 @@ public class Interact : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("f") && inRange)
+        if (Input.GetKeyDown("f") && inRange && !canvas.GetComponent<InventoryUI>().invActive)
         {
+            inConvo = true;
             GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = false;
             info = NPCcollider.GetComponentInParent<NPCInformation>();
             for (int i = 0; i < info.dialogueRequirement.Length; i++)
@@ -37,6 +40,7 @@ public class Interact : MonoBehaviour
             if (info.DialogueState >= info.Dialogue.Length || stopDialogue)
             {
                 info.DialogueState--;
+                inConvo = false;
                 GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = true;
                 canvas.GetComponent<TextManager>().RemoveText();
                 stopDialogue = false;

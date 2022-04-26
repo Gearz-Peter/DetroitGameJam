@@ -16,7 +16,7 @@ public class Items : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("f") && inRange)
+        if (Input.GetKeyDown("f") && inRange && !canvas.GetComponent<InventoryUI>().invActive)
         {
             if (isQuest)
             {
@@ -37,9 +37,11 @@ public class Items : MonoBehaviour
 
     IEnumerator Pickup()
     {
+        GameObject.FindWithTag("Player").GetComponent<Interact>().inConvo = true;
         GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = false;
         yield return new WaitForSeconds(1f);
         canvas.GetComponent<TextManager>().RemoveText();
+        GameObject.FindWithTag("Player").GetComponent<Interact>().inConvo = false;
         GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = true;
         destroyed = false;
 

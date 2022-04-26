@@ -11,7 +11,7 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] private Image[] ItemImages = new Image[10];
     [SerializeField] private TextMeshProUGUI[] ItemQuantity = new TextMeshProUGUI[10];
 
-    private bool invActive = false;
+    public bool invActive = false;
 
     void Start()
     {
@@ -20,7 +20,7 @@ public class InventoryUI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("tab"))
+        if (Input.GetKeyDown("tab") && GameObject.FindWithTag("Player").GetComponent<Interact>().inConvo == false)
         {
             if (!invActive)
             {
@@ -36,6 +36,7 @@ public class InventoryUI : MonoBehaviour
 
     void OpenInv()
     {
+        GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = false;
         inventory.SetActive(true);
 
         Inventory inv = GameObject.FindWithTag("Player").GetComponent<Items>().inventory;
@@ -43,10 +44,8 @@ public class InventoryUI : MonoBehaviour
         for (int i = 0; i < 10; i++)
         {
             ItemQuantity[i].text = "x" + inv.GetQuantity(i);
-            Debug.Log(inv.GetQuantity(i));
             if (inv.GetQuantity(i) == 0)
             {
-                Debug.Log(inv.GetQuantity(i));
                 ItemImages[i].gameObject.GetComponent<Image>().enabled = false;
                 ItemQuantity[i].gameObject.GetComponent<TextMeshProUGUI>().enabled = false;
             }
@@ -60,6 +59,7 @@ public class InventoryUI : MonoBehaviour
 
     void CloseInv()
     {
+        GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = true;
         inventory.SetActive(false);
     }
 }
