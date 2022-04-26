@@ -14,6 +14,7 @@ public class AttackAction : MonoBehaviour
     [SerializeField] GameObject MenuHub,SelectHub;
 
 
+    public int AttackSelected=0;
 
     private void Update()
     {
@@ -47,10 +48,9 @@ public class AttackAction : MonoBehaviour
                 if(attackText[i] == CurrentText)
                 {
                     nonvalid = false;
-                    
+                    AttackSelected = i;
                     SelectHub.SetActive(true);
-                    Debug.Log(i);
-                    SelectHub.GetComponent<SelectEnemyAction>().AttackType = i;
+                                 
                     gameObject.SetActive(false);
 
                 }

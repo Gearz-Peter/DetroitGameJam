@@ -10,7 +10,7 @@ public class SelectEnemyAction : MonoBehaviour
 
     [SerializeField] string[] enemyText;
     [SerializeField] GameObject[] enemyObjects;
-
+    [SerializeField] Text[] enemyTextsUI;
     [SerializeField] GameObject AttackHub,MainHub;
 
     public GameObject SelectedCharacter;
@@ -20,8 +20,12 @@ public class SelectEnemyAction : MonoBehaviour
     Vector2 InitialPos;
 
     [SerializeField] AttackingVisual attackvisual;
+    [SerializeField] AttackAction AttackActionHud;
 
     public int AttackType;
+
+
+    [SerializeField] GameObject EnemyList;
 
     private void Update()
     {
@@ -35,8 +39,70 @@ public class SelectEnemyAction : MonoBehaviour
 
     private void OnEnable()
     {
+        AttackType = AttackActionHud.AttackSelected;
+
         TextField.ActivateInputField();
          InitialPos = SelectedCharacter.transform.position;
+
+        EnemyHealth[] Obs;
+        Obs = EnemyList.GetComponentsInChildren<EnemyHealth>();
+
+
+
+        GameObject[] ActiveObjs = new GameObject[3];
+        int index = 0;
+        for (int i = 0; i < Obs.Length; i++)
+        {
+            ActiveObjs[index] = Obs[i].gameObject;
+            index++;
+        }
+        enemyObjects = ActiveObjs;
+
+      
+        if (AttackType != 2)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                enemyTextsUI[i].text = ActiveObjs[i].GetComponentInChildren<Text>().text;
+
+                enemyText[i] = enemyTextsUI[i].text.ToLower();
+            }
+        }
+        else
+        {
+            enemyTextsUI[0].text = "";
+            enemyText[0] = "";
+            
+            enemyTextsUI[2].text = "";
+            enemyText[2] = "";
+
+            int random = Random.Range(0, 3);
+           switch(random)
+            {
+                case 0:
+                    enemyTextsUI[1].text = "Everyone";
+                    enemyText[1] = "everyone";
+                    break;
+                case 1:
+                    enemyTextsUI[1].text = "Everything";
+                    enemyText[1] = "everything";
+                    break;
+                case 2:
+                    enemyTextsUI[1].text = "all";
+                    enemyText[1] = "all";
+                    break;
+               
+            }
+
+           
+
+
+        }
+        
+
+
+       
+
     }
 
     void WeaponSelect()
@@ -70,6 +136,9 @@ public class SelectEnemyAction : MonoBehaviour
                             attackvisual.AttackSpecial(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
                             break;
                         case 2:
+
+                            attackvisual.AttackAOE(SelectedCharacter, enemyObjects, InitialPos, SelectedCharacterStats);
+
                             break;
                     }
                    
