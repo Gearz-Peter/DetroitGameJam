@@ -8,4 +8,6 @@ public class NPCInformation : MonoBehaviour
     [SerializeField] private int ID;
     [SerializeField] public int DialogueState = 0;
     [SerializeField] public string[] Dialogue;
+    [SerializeField] public int[] dialogueRequirement;
+    [SerializeField] public string[] requirementNames;
 }

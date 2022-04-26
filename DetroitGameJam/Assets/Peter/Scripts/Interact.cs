@@ -8,31 +8,42 @@ public class Interact : MonoBehaviour
 
     private Collider2D NPCcollider;
     private NPCInformation info;
+    private bool stopDialogue = false;
 
     [SerializeField] private Canvas canvas;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("f") && inRange)
         {
             GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = false;
             info = NPCcollider.GetComponentInParent<NPCInformation>();
-            if (info.DialogueState >= info.Dialogue.Length)
+            for (int i = 0; i < info.dialogueRequirement.Length; i++)
+            {
+                if (info.DialogueState == info.dialogueRequirement[i] + 1)
+                {
+                    stopDialogue = true;
+                    List<string> items = GameObject.FindWithTag("Player").GetComponent<Items>().QuestItems;
+                    for (int j = 0; j < items.Count; j++)
+                    {
+                        if (items[j] == info.requirementNames[i])
+                        {
+                            stopDialogue = false;
+                        }
+                    }
+                }
+            }
+
+            if (info.DialogueState >= info.Dialogue.Length || stopDialogue)
             {
                 info.DialogueState--;
                 GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = true;
                 canvas.GetComponent<TextManager>().RemoveText();
+                stopDialogue = false;
             }
             else
             {
-                canvas.GetComponent<TextManager>().DisplayText(info.Dialogue[info.DialogueState]);
+                canvas.GetComponent<TextManager>().DisplayText(info.Dialogue[info.DialogueState],info.NPCName);
                 info.DialogueState++;
             }
         }
@@ -44,7 +55,7 @@ public class Interact : MonoBehaviour
         {
             NPCcollider = collider;
             inRange = true;
-            canvas.GetComponent<TextManager>().DisplayText("Press F to Interact!");
+            canvas.GetComponent<TextManager>().DisplayText("Press F to Talk!","");
         }
     }
 

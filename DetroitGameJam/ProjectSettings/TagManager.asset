@@ -7,6 +7,8 @@ TagManager:
   - CameraLimit
   - Enemy
   - NPC
+  - Item
+  - QuestItem
   layers:
   - Default
   - TransparentFX

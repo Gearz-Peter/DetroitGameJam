@@ -53,40 +53,26 @@
     <UnityVersion>2020.3.29f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\Peter\Scripts\Encounter.cs" />
-    <Compile Include="Assets\Henrique\Scripts\HenriqueDefaultScript.cs" />
-    <Compile Include="Assets\Henrique\Scripts\AttackAction.cs" />
-    <Compile Include="Assets\Main\Scripts\DefaultScript.cs" />
-    <Compile Include="Assets\Henrique\Scripts\SelectEnemyAction.cs" />
-    <Compile Include="Assets\Peter\Scripts\PlayerMove.cs" />
-    <Compile Include="Assets\Henrique\Scripts\TypeAction.cs" />
-    <Compile Include="Assets\Peter\Scripts\Interact.cs" />
-    <Compile Include="Assets\Peter\Scripts\TextManager.cs" />
-    <Compile Include="Assets\Peter\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Henrique\Scripts\AttackingVisual.cs" />
-    <Compile Include="Assets\Henrique\Scripts\AllyAttackStat.cs" />
-    <Compile Include="Assets\Henrique\Scripts\Autodelete.cs" />
     <Compile Include="Assets\Henrique\Scripts\EnemyHealth.cs" />
-=======
-    <Compile Include="Assets\Main\Scripts\DefaultScript.cs" />
     <Compile Include="Assets\Henrique\Scripts\HenriqueDefaultScript.cs" />
+    <Compile Include="Assets\Peter\Scripts\EnemyInformation.cs" />
+    <Compile Include="Assets\Henrique\Scripts\AttackAction.cs" />
+    <Compile Include="Assets\Main\Scripts\DefaultScript.cs" />
+    <Compile Include="Assets\Henrique\Scripts\SelectEnemyAction.cs" />
+    <Compile Include="Assets\Henrique\Scripts\Autodelete.cs" />
+    <Compile Include="Assets\Peter\Scripts\EncounterInfo.cs" />
+    <Compile Include="Assets\Peter\Scripts\NPCInformation.cs" />
+    <Compile Include="Assets\Henrique\Scripts\AttackingVisual.cs" />
+    <Compile Include="Assets\Peter\Scripts\CharacterInfo.cs" />
+    <Compile Include="Assets\Henrique\Scripts\AllyAttackStat.cs" />
     <Compile Include="Assets\Peter\Scripts\PlayerMove.cs" />
-    <Compile Include="Assets\Peter\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Peter\Scripts\Encounter.cs" />
     <Compile Include="Assets\Henrique\Scripts\TypeAction.cs" />
     <Compile Include="Assets\Peter\Scripts\Interact.cs" />
     <Compile Include="Assets\Peter\Scripts\TextManager.cs" />
-    <Compile Include="Assets\Henrique\Scripts\AttackAction.cs" />
-    <Compile Include="Assets\Henrique\Scripts\SelectEnemyAction.cs" />
-    <Compile Include="Assets\Peter\Scripts\NPCInformation.cs" />
-    <Compile Include="Assets\Peter\Scripts\EnemyInformation.cs" />
-    <Compile Include="Assets\Peter\Scripts\EncounterInfo.cs" />
-    <Compile Include="Assets\Peter\Scripts\CharacterInfo.cs" />
->>>>>>> 6223a22c5269fbd0d73b92aa7b792c20ae44b585
+    <Compile Include="Assets\Peter\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Peter\Scripts\Items.cs" />
+    <Compile Include="Assets\Peter\Scripts\ItemInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
