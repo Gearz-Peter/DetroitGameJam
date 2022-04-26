@@ -5,10 +5,12 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D PlayerBody;
 
     [SerializeField] private Animator animator;
-
     [SerializeField] private float movementSpeed = 6.36f;
-
     [SerializeField] public bool isMovementEnabled = true;
+
+    bool isMovingUp;
+    bool isMoving;
+    bool ismovingLeft;
 
     private void Awake()
     {
@@ -27,13 +29,43 @@ public class PlayerMove : MonoBehaviour
 
     private void Move()
     {
-        if (isMovementEnabled)
+        PlayerBody.velocity = new Vector2(0, 0);
+        isMoving = false;
+        if (Input.GetKey("w"))
         {
-            PlayerBody.velocity = new Vector2(Input.GetAxis("Horizontal") * movementSpeed, Input.GetAxis("Vertical") * movementSpeed);
+            PlayerBody.velocity = new Vector2(0,movementSpeed);
+            isMoving = true;
+            isMovingUp = true;
         }
-        if (!isMovementEnabled)
+        if (Input.GetKey("s"))
         {
-            PlayerBody.velocity = new Vector2(0, 0);
+            PlayerBody.velocity = new Vector2(0,-movementSpeed);
+            isMoving = true;
+            ismovingUp = false;
         }
+        if (Input.GetKey("a"))
+        {
+            PlayerBody.velocity = new Vector2(-movementSpeed, 0);
+            isMoving = true;
+            ismovingLeft = true;
+        }
+        if (Input.GetKey("d"))
+        {
+            PlayerBody.velocity = new Vector2(movementSpeed, 0);
+            isMoving = true;
+            ismovingLeft = false;
+        }
+
+
+
+
+        /* if (isMovementEnabled)
+         {
+             PlayerBody.velocity = new Vector2(Input.GetAxis("Horizontal") * movementSpeed, Input.GetAxis("Vertical") * movementSpeed);
+         }
+         if (!isMovementEnabled)
+         {
+             PlayerBody.velocity = new Vector2(0, 0);
+         }*/
     }
 }
