@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Items : MonoBehaviour
 {
-    [SerializeField] public List<int[]> items = new List<int[]>();
+    [SerializeField] public Inventory inventory = new Inventory();
     [SerializeField] public List<string> QuestItems = new List<string>();
     [SerializeField] private Canvas canvas;
 
@@ -26,15 +26,8 @@ public class Items : MonoBehaviour
             else
             {
                 info = itemCollider.GetComponentInParent<ItemInfo>();
-                canvas.GetComponent<TextManager>().DisplayText("You Picked Up " + info.ItemNumber + info.ItemName, "");
-                for ()
-                {
-
-                }
-                int[] temp = new int[2];
-                temp[0] = info.ItemID;
-                temp[1] = info.ItemNumber;
-                items.Add(temp);
+                inventory.AddQuantity(info.ItemID,info.ItemNumber);
+                canvas.GetComponent<TextManager>().DisplayText("You Picked Up " + info.ItemNumber + " " + inventory.GetItemName(info.ItemID), "");    
             }
             destroyed = true;
             StartCoroutine(Pickup());
@@ -48,6 +41,7 @@ public class Items : MonoBehaviour
         yield return new WaitForSeconds(1f);
         canvas.GetComponent<TextManager>().RemoveText();
         GameObject.FindWithTag("Player").GetComponent<PlayerMove>().isMovementEnabled = true;
+        destroyed = false;
 
     }
 
@@ -89,5 +83,81 @@ public class Items : MonoBehaviour
                 canvas.GetComponent<TextManager>().RemoveText();
             }
         }
+    }
+}
+
+public class Inventory
+{
+    static public List<Item> inventory = new List<Item>();
+    private Item item;
+
+    public Inventory()
+    {
+        item = new Item("cola");
+        inventory.Add(item);
+        item = new Item("pot");
+        inventory.Add(item);
+        item = new Item("bullet");
+        inventory.Add(item);
+        item = new Item("4");
+        inventory.Add(item);
+        item = new Item("5");
+        inventory.Add(item);
+        item = new Item("6");
+        inventory.Add(item);
+        item = new Item("7");
+        inventory.Add(item);
+        item = new Item("8");
+        inventory.Add(item);
+        item = new Item("9");
+        inventory.Add(item);
+        item = new Item("10");
+        inventory.Add(item);
+    }
+
+    public string GetItemName(int Id)
+    {
+        return inventory[Id].GetName();
+    }
+
+    public void AddQuantity(int Id, int num)
+    {
+        inventory[Id].AddQuantity(num);
+    }
+
+    public int GetQuantity(int Id)
+    {
+        return inventory[Id].GetQuantity();
+    }
+}
+
+public class Item
+{
+    private int quantity;
+    private int ItemID;
+    private string ItemName;
+    static private int numberOfItems = 0;
+
+    public Item(string _ItemName)
+    {
+        ItemName = _ItemName;
+        ItemID = numberOfItems;
+        numberOfItems++;
+        quantity = 0;
+    }
+
+    public string GetName()
+    {
+        return ItemName;
+    }
+
+    public void AddQuantity(int num)
+    {
+        quantity += num;
+    }
+
+    public int GetQuantity()
+    {
+        return quantity;
     }
 }
