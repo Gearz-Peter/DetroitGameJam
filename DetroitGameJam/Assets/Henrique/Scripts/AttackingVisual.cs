@@ -8,8 +8,7 @@ public class AttackingVisual : MonoBehaviour
     Vector2 BeforeInitialPos;
     GameObject SelectedCharacterBefore;
 
-    [SerializeField] GameObject DamageNumberPrefab;
-    [SerializeField] GameObject BattleCanvas;
+
 
     [SerializeField] Transform AOEposition;
 
@@ -58,11 +57,7 @@ public class AttackingVisual : MonoBehaviour
             yield return null;
         }
 
-        GameObject DmgNumber = Instantiate(DamageNumberPrefab, SelectedCharacter.transform.position, Quaternion.identity, BattleCanvas.transform);
-        DmgNumber.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 1) * 200, Random.Range(5, 6) * 150), ForceMode2D.Impulse);
-
-        DmgNumber.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-5, 5) * 23000);
-        DmgNumber.GetComponent<Text>().text = "-" + stats.BasicDamage.ToString();
+     
 
         enemyObject.GetComponent<EnemyHealth>().DealDamage(stats.BasicDamage);
 
@@ -137,13 +132,13 @@ public class AttackingVisual : MonoBehaviour
             SelectedCharacter.transform.position = oldPos;
                 }
 
-        GameObject DmgNumber = Instantiate(DamageNumberPrefab, SelectedCharacter.transform.position, Quaternion.identity, BattleCanvas.transform);
-        DmgNumber.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 1) * 200, Random.Range(5, 6) * 150), ForceMode2D.Impulse);
-
-        DmgNumber.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-5, 5) * 23000);
-        DmgNumber.GetComponent<Text>().text = "-" + stats.SpecialDamage.ToString();
+      
 
         enemyObject.GetComponent<EnemyHealth>().DealDamage(stats.SpecialDamage);
+        if(stats.Bleeding)
+        {
+            enemyObject.GetComponent<EnemyHealth>().ApplyBleed();
+        }
 
         yield return new WaitForSeconds(.15f);
 
@@ -200,11 +195,7 @@ public class AttackingVisual : MonoBehaviour
         }
         for(int i=0;i<enemyObject.Length;i++)
         {
-            GameObject DmgNumber = Instantiate(DamageNumberPrefab, enemyObject[i].transform.position, Quaternion.identity, BattleCanvas.transform);
-            DmgNumber.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 1) * 200, Random.Range(5, 6) * 150), ForceMode2D.Impulse);
-
-            DmgNumber.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-5, 5) * 23000);
-            DmgNumber.GetComponent<Text>().text = "-" + stats.AOEDamage.ToString();
+           
 
 
             enemyObject[i].GetComponent<EnemyHealth>().DealDamage(stats.AOEDamage);
