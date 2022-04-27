@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class DoEnd : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnTriggerEnter2D(Collider2D collider)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collider.tag == "End")
+        {
+            GameObject.FindWithTag("Player").GetComponent<EnableDisable>().flip = true;
+        }
     }
 }
