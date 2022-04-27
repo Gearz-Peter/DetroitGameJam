@@ -206,6 +206,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &954755324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 954755326}
+  - component: {fileID: 954755325}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &954755325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954755324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f650373f1c6286541a56f6fe5d6aa813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuestItems: []
+  canvas: {fileID: 0}
+--- !u!4 &954755326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954755324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 220.5717, y: 58.150085, z: -17.395449}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1559295168
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,6 +317,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2077185249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2870490017522041097, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+  m_PrefabInstance: {fileID: 2870490016876495950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2870490016876495950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -279,6 +329,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2753050573762741680, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753050573762741680, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753050573762741680, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753050573762741680, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753050573762741680, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753050573762741680, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2870490016212989134, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -287,6 +361,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2870490016404941280, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: BattleCanvas
+      value: 
+      objectReference: {fileID: 2077185249}
+    - target: {fileID: 2870490016404941280, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: DamageNumberPrefab
+      value: 
+      objectReference: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
     - target: {fileID: 2870490016559438139, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -294,6 +376,20 @@ PrefabInstance:
     - target: {fileID: 2870490016559438139, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870490016864234987, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: BattleCanvas
+      value: 
+      objectReference: {fileID: 2077185249}
+    - target: {fileID: 2870490016864234987, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: DamageNumberPrefab
+      value: 
+      objectReference: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
+    - target: {fileID: 2870490016966578217, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: m_Text
+      value: 'Item
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017244916715, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.x
@@ -391,6 +487,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CombatCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2870490017536498585, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: BattleCanvas
+      value: 
+      objectReference: {fileID: 2077185249}
+    - target: {fileID: 2870490017536498585, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: DamageNumberPrefab
+      value: 
+      objectReference: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
     - target: {fileID: 2870490017569967908, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -415,5 +519,13 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3271755127683100582, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5519785194309767908, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: Inventory
+      value: 
+      objectReference: {fileID: 954755325}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}

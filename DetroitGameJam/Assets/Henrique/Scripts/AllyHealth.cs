@@ -11,6 +11,7 @@ public class AllyHealth : MonoBehaviour
 
     private void Start()
     {
+        Health = MaxHealth;
         HealthSlider.maxValue = MaxHealth;
         HealthSlider.value = Health;
 
@@ -22,6 +23,28 @@ public class AllyHealth : MonoBehaviour
 
     }
 
+    public void Revive()
+    {
+        if(Health <= 0)
+        {
+            Health = MaxHealth;
+            HealthSlider.value = Health;
+        }
+    }
 
+    public void Heal(int amout)
+    {
+        if(Health > 0)
+        {
+            Health += amout;
+            HealthSlider.value = Health;
+            if(Health > MaxHealth)
+            {
+                Health = MaxHealth;
+            }
+        }
+      
+
+    }
 
 }
