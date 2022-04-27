@@ -2197,6 +2197,8 @@ MonoBehaviour:
   HealthSlider: {fileID: 2870490017908006312}
   DebuffPanel: {fileID: 1538281392442085697}
   BleedIcon: {fileID: 662563892703309767, guid: 201c83e8ae35b744ab86ba292d82f3ee, type: 3}
+  DamageNumberPrefab: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
+  BattleCanvas: {fileID: 2870490017522041097}
 --- !u!114 &2870490016404941281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3250,6 +3252,8 @@ MonoBehaviour:
   HealthSlider: {fileID: 2870490016230589740}
   DebuffPanel: {fileID: 2370472509349047260}
   BleedIcon: {fileID: 662563892703309767, guid: 201c83e8ae35b744ab86ba292d82f3ee, type: 3}
+  DamageNumberPrefab: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
+  BattleCanvas: {fileID: 2870490017522041097}
 --- !u!114 &2870490016864234984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4199,8 +4203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccad86d28dc42894da89382c4d37f9b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DamageNumberPrefab: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
-  BattleCanvas: {fileID: 2870490017522041097}
   AOEposition: {fileID: 2870490016604438040}
 --- !u!1 &2870490017375008462
 GameObject:
@@ -4665,6 +4667,8 @@ MonoBehaviour:
   HealthSlider: {fileID: 2870490015909008786}
   DebuffPanel: {fileID: 2069464351226955337}
   BleedIcon: {fileID: 662563892703309767, guid: 201c83e8ae35b744ab86ba292d82f3ee, type: 3}
+  DamageNumberPrefab: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
+  BattleCanvas: {fileID: 2870490017522041097}
 --- !u!114 &2870490017536498582
 MonoBehaviour:
   m_ObjectHideFlags: 0
