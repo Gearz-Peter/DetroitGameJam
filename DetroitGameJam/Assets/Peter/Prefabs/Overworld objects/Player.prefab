@@ -165,8 +165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c3cc85ee544f9141ae364167cb06a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  encounterImage: {fileID: 0}
   Transition: {fileID: 0}
   BattleCanvas: {fileID: 0}
 --- !u!114 &4199402501522167543
@@ -182,7 +180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inConvo: 0
-  canvas: {fileID: 0}
 --- !u!95 &2116897346
 Animator:
   serializedVersion: 3
@@ -215,7 +212,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestItems: []
-  canvas: {fileID: 0}
 --- !u!114 &2116897353
 MonoBehaviour:
   m_ObjectHideFlags: 0

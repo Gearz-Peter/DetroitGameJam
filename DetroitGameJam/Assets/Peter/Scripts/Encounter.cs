@@ -5,13 +5,12 @@ using UnityEngine.UI;
 
 public class Encounter : MonoBehaviour
 {
-    [SerializeField] private Canvas canvas;
-    [SerializeField] private Image encounterImage;
+    private Canvas canvas;
     [SerializeField] TransitionAnim Transition;
     [SerializeField] GameObject BattleCanvas;
     void start()
     {
-        encounterImage.enabled = false;
+        canvas = GameObject.FindWithTag("OverworldCanvas").GetComponent<Canvas>();
     }
 
     void OnTriggerEnter2D(Collider2D collider)

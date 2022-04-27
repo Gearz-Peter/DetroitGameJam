@@ -12,7 +12,12 @@ public class Interact : MonoBehaviour
     private NPCInformation info;
     private bool stopDialogue = false;
 
-    [SerializeField] private Canvas canvas;
+    private Canvas canvas;
+
+    private void Start()
+    {
+        canvas = GameObject.FindWithTag("OverworldCanvas").GetComponent<Canvas>();
+    }
 
     void Update()
     {

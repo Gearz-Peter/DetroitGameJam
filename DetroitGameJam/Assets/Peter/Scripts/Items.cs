@@ -6,13 +6,19 @@ public class Items : MonoBehaviour
 {
     [SerializeField] public Inventory inventory = new Inventory();
     [SerializeField] public List<string> QuestItems = new List<string>();
-    [SerializeField] private Canvas canvas;
+
+    private Canvas canvas;
 
     private bool isQuest;
     private Collider2D itemCollider;
     private bool inRange = false;
     private bool destroyed = false;
     private ItemInfo info;
+
+    private void Start()
+    {
+        canvas = GameObject.FindWithTag("OverworldCanvas").GetComponent<Canvas>();
+    }
 
     void Update()
     {
@@ -95,11 +101,11 @@ public class Inventory
 
     public Inventory()
     {
-        item = new Item("cola");
+        item = new Item("Cola");
         inventory.Add(item);
-        item = new Item("pot");
+        item = new Item("Defibrillator");
         inventory.Add(item);
-        item = new Item("defibrillator");
+        item = new Item("Morphine");
         inventory.Add(item);
         item = new Item("4");
         inventory.Add(item);
