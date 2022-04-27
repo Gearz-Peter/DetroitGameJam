@@ -9,7 +9,8 @@ public class AttackingVisual : MonoBehaviour
     GameObject SelectedCharacterBefore;
 
 
-
+    [SerializeField] GameObject[] WooshSound, NormalAttackSound;
+    [SerializeField] GameObject MetalAttackSound,BottleSound;
     [SerializeField] Transform AOEposition;
 
 
@@ -34,7 +35,7 @@ public class AttackingVisual : MonoBehaviour
     {
 
 
-
+        Instantiate(WooshSound[Random.Range(0,WooshSound.Length)], transform.position, Quaternion.identity);
         while (Vector2.Distance(SelectedCharacter.transform.position, enemyObject.transform.position) > 250)
         {
 
@@ -57,8 +58,8 @@ public class AttackingVisual : MonoBehaviour
             yield return null;
         }
 
-     
 
+        Instantiate(NormalAttackSound[Random.Range(0,NormalAttackSound.Length)], transform.position, Quaternion.identity);
         enemyObject.GetComponent<EnemyHealth>().DealDamage(stats.BasicDamage);
 
         yield return new WaitForSeconds(.15f);
@@ -112,6 +113,7 @@ public class AttackingVisual : MonoBehaviour
     IEnumerator AttackSpecialNumerator(GameObject SelectedCharacter, GameObject enemyObject, Vector2 InitialPos, AllyAttackStat stats)
     {
 
+        Instantiate(WooshSound[Random.Range(0, WooshSound.Length)], transform.position, Quaternion.identity);
 
 
         while (Vector2.Distance(SelectedCharacter.transform.position, enemyObject.transform.position) > 250)
@@ -132,7 +134,8 @@ public class AttackingVisual : MonoBehaviour
             SelectedCharacter.transform.position = oldPos;
                 }
 
-      
+
+        Instantiate(BottleSound, transform.position, Quaternion.identity);
 
         enemyObject.GetComponent<EnemyHealth>().DealDamage(stats.SpecialDamage);
         if(stats.Bleeding)
@@ -173,6 +176,7 @@ public class AttackingVisual : MonoBehaviour
     IEnumerator AttackAOENumerator(GameObject SelectedCharacter, GameObject[] enemyObject, Vector2 InitialPos, AllyAttackStat stats)
     {
 
+        Instantiate(WooshSound[Random.Range(0, WooshSound.Length)], transform.position, Quaternion.identity);
 
 
         while (Vector2.Distance(SelectedCharacter.transform.position, AOEposition.position) > 100)
@@ -190,12 +194,20 @@ public class AttackingVisual : MonoBehaviour
         for (int i = 0; i < 700; i++)
         {
             SelectedCharacter.transform.Rotate(0, 0, 1 * RotateSpeed);
+            if(i == 200 || i == 400 || i == 600)
+            {
+                Instantiate(WooshSound[Random.Range(0, WooshSound.Length)], transform.position, Quaternion.identity);
+
+            }
+
             yield return null;
             RotateSpeed += Time.deltaTime * 5;
         }
-        for(int i=0;i<enemyObject.Length;i++)
+        for (int i=0;i<enemyObject.Length;i++)
         {
-           
+            yield return new WaitForSeconds(0.05f);
+            Instantiate(MetalAttackSound, transform.position, Quaternion.identity);
+
 
 
             enemyObject[i].GetComponent<EnemyHealth>().DealDamage(stats.AOEDamage);

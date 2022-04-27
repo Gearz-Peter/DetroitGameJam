@@ -8254,11 +8254,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016404941280, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: Health
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016404941280, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: MaxHealth
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016404941310, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: BasicDamage
@@ -8278,11 +8278,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016864234987, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: Health
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016864234987, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: MaxHealth
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017244916715, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8402,11 +8402,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017536498585, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: Health
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017536498585, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: MaxHealth
-      value: 1
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017569967908, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.x
