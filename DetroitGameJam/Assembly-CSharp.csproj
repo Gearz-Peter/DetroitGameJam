@@ -82,6 +82,7 @@
     <Compile Include="Assets\Peter\Scripts\TextManager.cs" />
     <Compile Include="Assets\Henrique\Scripts\RatScripts\RatAttackStats.cs" />
     <Compile Include="Assets\Peter\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Peter\Scripts\MenuButtonManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
