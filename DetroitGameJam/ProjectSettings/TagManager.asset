@@ -10,6 +10,7 @@ TagManager:
   - Item
   - QuestItem
   - OverworldCanvas
+  - End
   layers:
   - Default
   - TransparentFX

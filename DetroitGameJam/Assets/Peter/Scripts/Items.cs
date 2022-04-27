@@ -99,7 +99,7 @@ public class Inventory
         inventory.Add(item);
         item = new Item("pot");
         inventory.Add(item);
-        item = new Item("bullet");
+        item = new Item("defibrillator");
         inventory.Add(item);
         item = new Item("4");
         inventory.Add(item);
