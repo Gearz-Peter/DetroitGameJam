@@ -12,12 +12,16 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] GameObject BleedIcon;
     [SerializeField] GameObject DamageNumberPrefab;
     [SerializeField] GameObject BattleCanvas;
-    private void Start()
+
+    private void OnEnable()
     {
+    
+
+        Health = MaxHealth;
         HealthSlider.maxValue = MaxHealth;
         HealthSlider.value = Health;
-
     }
+
     public void DealDamage(int amout)
     {
         Health -= amout;

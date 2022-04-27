@@ -4390,6 +4390,7 @@ GameObject:
   - component: {fileID: 2870490017522041092}
   - component: {fileID: 2870490017522041095}
   - component: {fileID: 2870490017522041094}
+  - component: {fileID: 8036206094537384674}
   m_Layer: 5
   m_Name: CombatCanvas
   m_TagString: Untagged
@@ -4490,6 +4491,29 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8036206094537384674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2870490017522041097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3d24575eb83904482375bf27e943b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AllyList: {fileID: 2870490017968447836}
+  allyObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  enemyObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  EnemyList: {fileID: 2870490016314841710}
+  TransitionOBJ: {fileID: 0}
 --- !u!1 &2870490017522546579
 GameObject:
   m_ObjectHideFlags: 0

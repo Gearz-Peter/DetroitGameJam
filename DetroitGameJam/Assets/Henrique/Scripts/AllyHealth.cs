@@ -9,12 +9,12 @@ public class AllyHealth : MonoBehaviour
 
     [SerializeField] Slider HealthSlider;
 
-    private void Start()
+ 
+    private void OnEnable()
     {
         Health = MaxHealth;
         HealthSlider.maxValue = MaxHealth;
         HealthSlider.value = Health;
-
     }
     public void DealDamage(int amout)
     {

@@ -8252,12 +8252,36 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2870490016404941280, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: Health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870490016404941280, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: MaxHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870490016404941310, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: BasicDamage
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2870490016559438139, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016559438139, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870490016864234985, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: BasicDamage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870490016864234987, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: Health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870490016864234987, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: MaxHealth
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017244916715, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
@@ -8372,6 +8396,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2870490017536498583, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: BasicDamage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870490017536498585, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: Health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870490017536498585, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: MaxHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2870490017569967908, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -8396,6 +8432,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8036206094537384674, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: TransitionOBJ
+      value: 
+      objectReference: {fileID: 957661700}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
 --- !u!1001 &1342806533
