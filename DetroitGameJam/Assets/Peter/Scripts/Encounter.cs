@@ -39,5 +39,21 @@ public class Encounter : MonoBehaviour
         yield return new WaitForSeconds(1);
         BattleCanvas.SetActive(true);
         Transition.TransitionOFFFunc();
+
+
+        while (Transition.FullyOn)
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(.3f);
+        while (!Transition.FullyOn)
+        {
+            yield return null;
+        }
+        BattleCanvas.SetActive(false);
+        Transition.TransitionOFFFunc();
+        GameObject.FindWithTag("Player").GetComponent<EnableDisable>().flip = true;
+
     }
 }

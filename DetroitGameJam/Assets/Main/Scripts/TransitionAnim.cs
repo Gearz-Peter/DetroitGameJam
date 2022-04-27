@@ -21,6 +21,7 @@ public class TransitionAnim : MonoBehaviour
 
     public void TransitionOFFFunc()
     {
+       
         for (int i = 0; i < Images.Length; i++)
         {
           

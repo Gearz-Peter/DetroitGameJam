@@ -25,7 +25,9 @@ public class BasicRat : MonoBehaviour
         float TimeToAttack;
 
     Vector2 InitialPosition;
-    private void Start()
+
+
+    private void OnEnable()
     {
         InitialPosition = transform.position;
         TimeToAttack = Random.Range(4, 10);
