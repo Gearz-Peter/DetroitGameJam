@@ -237,3 +237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6441b794884232542b179723d0386164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goodEnd: {fileID: 2800000, guid: b803f51a56c5b5d478d71adffde6e337, type: 3}
+  mehEnd: {fileID: 2800000, guid: 603ad76f8f3cb6a4fa1572821a06b8b7, type: 3}
+  badEnd: {fileID: 2800000, guid: 3a03bd09481725e478baf7a653662314, type: 3}

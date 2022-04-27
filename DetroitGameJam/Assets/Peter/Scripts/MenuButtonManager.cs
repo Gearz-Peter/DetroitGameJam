@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtonManager : MonoBehaviour
 {
-    void StartGame()
+    public void StartGame()
     {
-        SceneManager.LoadScene("PeterScene", LoadSceneMode.Additive);
+        SceneManager.LoadScene("PeterTestScene", LoadSceneMode.Single);
     }
 
-    void ExitGame()
+    public void ExitGame()
     {
-
+        Application.Quit();
     }
 }
