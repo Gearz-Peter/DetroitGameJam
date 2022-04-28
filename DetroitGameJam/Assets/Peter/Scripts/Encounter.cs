@@ -17,19 +17,19 @@ public class Encounter : MonoBehaviour
     {
         if(collider.tag == "Enemy")
         {
-            DoEncounter();
+            DoEncounter(collider);
         }
     }
 
-    void DoEncounter()
+    void DoEncounter(Collider2D collider)
     {
       
         GameObject.FindWithTag("Player").GetComponent<EnableDisable>().flip = true;
         Transition.TransitionONFunc();
-        StartCoroutine(WaitingTransition());
+        StartCoroutine(WaitingTransition(collider));
     }
 
-   IEnumerator WaitingTransition()
+   IEnumerator WaitingTransition(Collider2D collider)
     {
         yield return new WaitForSeconds(.3f);
        while(!Transition.FullyOn)
@@ -54,6 +54,7 @@ public class Encounter : MonoBehaviour
         BattleCanvas.SetActive(false);
         Transition.TransitionOFFFunc();
         GameObject.FindWithTag("Player").GetComponent<EnableDisable>().flip = true;
+        Destroy(collider.gameObject);
 
     }
 }

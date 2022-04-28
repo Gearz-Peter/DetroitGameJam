@@ -7,7 +7,7 @@ public class MenuButtonManager : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("PeterTestScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
     }
 
     public void ExitGame()
