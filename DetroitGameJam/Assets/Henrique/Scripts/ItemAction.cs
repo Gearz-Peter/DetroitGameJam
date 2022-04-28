@@ -39,7 +39,7 @@ public class ItemAction : MonoBehaviour
         {
             string name = Inventory.inventory.GetItemName(i);
             TextsUI[i].text = name;
-            itemText[i] = name;
+            itemText[i] = name.ToLower();
 
             QuantityTextUI[i].text = "x" + Inventory.inventory.GetQuantity(i).ToString();
             ItemQuantity[i] = Inventory.inventory.GetQuantity(i);
