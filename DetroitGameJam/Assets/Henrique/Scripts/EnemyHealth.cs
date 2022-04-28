@@ -20,7 +20,8 @@ public class EnemyHealth : MonoBehaviour
 
     private void OnEnable()
     {
-      
+        StopAllCoroutines();
+
         ImageInitialPosition = spriteI.transform.localPosition;
 
         Health = MaxHealth;
@@ -98,14 +99,14 @@ public class EnemyHealth : MonoBehaviour
     IEnumerator BleedNumerator()
     {
         GameObject obj = Instantiate(BleedIcon, transform.position, Quaternion.identity, DebuffPanel.transform);
-
-        for(int i=0;i<10;i++)
+        Destroy(obj,8);
+        for (int i=0;i<8;i++)
         {
             yield return new WaitForSeconds(1);
-            DealDamage(2);
+            DealDamage(1);
 
         }
-        Destroy(obj);
+        
     }
 
 
