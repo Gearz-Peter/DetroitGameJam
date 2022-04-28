@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class BasicRat : MonoBehaviour
+public class TrashRat : MonoBehaviour
 {
     [SerializeField] GameObject AllieList;
     [SerializeField] GameObject[] AllyObjs;
@@ -18,39 +18,39 @@ public class BasicRat : MonoBehaviour
     [SerializeField] GameObject DamageNumberPrefab;
     [SerializeField] GameObject BattleCanvas;
 
-
+    [SerializeField] GameObject TrashSound;
     [SerializeField] EnemyHealth EnemyHealth;
     [SerializeField] RatAttackStats ratStats;
     [SerializeField] GameObject EnemyObject;
-        float TimeToAttack;
+    float TimeToAttack;
 
     Vector3 InitialPosition;
 
 
     private void OnEnable()
     {
-        
+
         InitialPosition = transform.position;
-        Debug.Log(InitialPosition.z);
+       
         TimeToAttack = Random.Range(4, 10);
     }
 
     private void Update()
     {
-       if(TimeToAttack <0 && EnemyHealth.Health > 0)
+        if (TimeToAttack < 0 && EnemyHealth.Health > 0)
         {
-            TimeToAttack = Random.Range(4, 8);
+            TimeToAttack = Random.Range(13, 15);
             PickFight();
         }
-       else
+        else
         {
             TimeToAttack -= Time.deltaTime;
         }
-        
+
 
     }
 
-   void PickFight()
+    void PickFight()
     {
 
         AllyHealth[] Obs;
@@ -69,11 +69,11 @@ public class BasicRat : MonoBehaviour
 
         bool found = false;
         int searchtimeout = 50;
-       while(!found && searchtimeout > 0)
+        while (!found && searchtimeout > 0)
         {
             int randomsearch = Random.Range(0, 3);
 
-            if(AllyObjs[randomsearch].GetComponent<AllyHealth>().Health > 0 )
+            if (AllyObjs[randomsearch].GetComponent<AllyHealth>().Health > 0)
             {
                 found = true;
                 AttackSingle(gameObject, AllyObjs[randomsearch], InitialPosition, ratStats);
@@ -118,19 +118,11 @@ public class BasicRat : MonoBehaviour
         }
         yield return new WaitForSeconds(.1f);
 
-        for (int i = 0; i < 40; i++)
+        for (int i = 0; i < 90; i++)
         {
-            SelectedCharacter.transform.Translate(-1, 0, 0);
-             yield return null;
-        }
-        yield return new WaitForSeconds(.15f);
-
-        for (int i = 0; i < 40; i++)
-        {
-            SelectedCharacter.transform.Translate(1, 0, 0);
+            SelectedCharacter.transform.Rotate(0, 0, 1);
             yield return null;
         }
-
         GameObject DmgNumber = Instantiate(DamageNumberPrefab, SelectedCharacter.transform.position, Quaternion.identity, BattleCanvas.transform);
         DmgNumber.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 1) * 200, Random.Range(5, 6) * 150), ForceMode2D.Impulse);
 
@@ -139,7 +131,13 @@ public class BasicRat : MonoBehaviour
 
         enemyObject.GetComponent<AllyHealth>().DealDamage(stats.BasicDamage);
 
-        yield return new WaitForSeconds(.15f);
+        Instantiate(TrashSound, transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(2);
+
+       
+       
+
+       
 
 
 
@@ -149,9 +147,9 @@ public class BasicRat : MonoBehaviour
             SelectedCharacter.transform.position = Vector3.Lerp(SelectedCharacter.transform.position, InitialPos, 15 * Time.deltaTime);
 
 
-            if (SelectedCharacter.transform.eulerAngles.z > 15)
+            if (SelectedCharacter.transform.eulerAngles.z > 0)
             {
-                SelectedCharacter.transform.Rotate(0, 0, 8);
+                SelectedCharacter.transform.Rotate(0, 0, -2);
             }
 
             yield return null;
@@ -161,9 +159,5 @@ public class BasicRat : MonoBehaviour
 
         Debug.Log(InitialPosition.z);
     }
-
-
-
-
 
 }

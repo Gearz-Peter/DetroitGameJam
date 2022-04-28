@@ -10,7 +10,7 @@ public class KatanaRat : MonoBehaviour
     Vector3 BeforeInitialPos;
     GameObject SelectedCharacterBefore;
 
-    IEnumerator AttackCoroutine, PickFightCoroutine , SpecialAttackCoroutine;
+    IEnumerator AttackCoroutine , SpecialAttackCoroutine;
 
 
 

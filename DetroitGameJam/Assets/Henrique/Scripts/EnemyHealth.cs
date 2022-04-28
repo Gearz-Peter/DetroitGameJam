@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class EnemyHealth : MonoBehaviour
 {
    public int Health;
-    [SerializeField] int MaxHealth;
+    public int MaxHealth;
     
     [SerializeField] Slider HealthSlider;
     [SerializeField] GameObject DebuffPanel;
@@ -17,6 +17,11 @@ public class EnemyHealth : MonoBehaviour
     Vector3 ImageInitialPosition;
     [SerializeField] GameObject[] HurtSounds;
     [SerializeField] GameObject DeathSound;
+
+
+    [SerializeField] GameObject HealCrossPrefab;
+    [SerializeField] GameObject HealNumberPrefab;
+   
 
     private void OnEnable()
     {
@@ -33,6 +38,35 @@ public class EnemyHealth : MonoBehaviour
 
         spriteI.color = new Color(1,1,1, 1);
     }
+
+    public void Heal(int amout)
+    {
+        if (Health > 0)
+        {
+            GameObject DmgNumber = Instantiate(HealNumberPrefab, gameObject.transform.position, Quaternion.identity, BattleCanvas.transform);
+            DmgNumber.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 1) * 200, Random.Range(5, 6) * 150), ForceMode2D.Impulse);
+
+            DmgNumber.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-5, 5) * 23000);
+            DmgNumber.GetComponent<Text>().text = "+" + amout;
+
+            for (int i = 0; i < 3; i++)
+            {
+                Instantiate(HealCrossPrefab, new Vector3(transform.position.x + Random.Range(-200, 200), transform.position.y + Random.Range(50, 100), transform.position.z), Quaternion.identity, BattleCanvas.transform);
+            }
+
+
+
+            Health += amout;
+            HealthSlider.value = Health;
+            if (Health > MaxHealth)
+            {
+                Health = MaxHealth;
+            }
+        }
+
+
+    }
+
 
     public void DealDamage(int amout)
     {

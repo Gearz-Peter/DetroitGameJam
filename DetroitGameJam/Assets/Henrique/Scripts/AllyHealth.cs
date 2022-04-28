@@ -12,6 +12,10 @@ public class AllyHealth : MonoBehaviour
     Vector3 ImageInitialPosition;
     [SerializeField] GameObject[] HurtSounds;
     [SerializeField] GameObject DeathSound;
+    [SerializeField] GameObject HealCrossPrefab;
+    [SerializeField] GameObject HealNumberPrefab;
+    [SerializeField] GameObject BattleCanvas;
+
     IEnumerator ShakeNumerator()
     {
         float ShakeAmout = 4;
@@ -94,6 +98,8 @@ public class AllyHealth : MonoBehaviour
 
             Health = MaxHealth;
             HealthSlider.value = Health;
+
+            Heal(Health);
         }
     }
 
@@ -103,6 +109,19 @@ public class AllyHealth : MonoBehaviour
     {
         if(Health > 0)
         {
+            GameObject DmgNumber = Instantiate(HealNumberPrefab, gameObject.transform.position, Quaternion.identity, BattleCanvas.transform);
+            DmgNumber.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 1) * 200, Random.Range(5, 6) * 150), ForceMode2D.Impulse);
+
+            DmgNumber.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-5, 5) * 23000);
+            DmgNumber.GetComponent<Text>().text = "+" + amout;
+
+            for (int i = 0; i < 3;i++)
+            {
+                Instantiate(HealCrossPrefab, new Vector3(transform.position.x + Random.Range(-200, 200), transform.position.y + Random.Range(50, 100), transform.position.z), Quaternion.identity, BattleCanvas.transform);
+            }
+
+
+
             Health += amout;
             HealthSlider.value = Health;
             if(Health > MaxHealth)
