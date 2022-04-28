@@ -121,7 +121,7 @@ public class SelectEnemyAction : MonoBehaviour
             bool nonvalid = true;
             for (int i = 0; i < enemyText.Length; i++)
             {
-                if (enemyText[i] == CurrentText)
+                if (enemyText[i] == CurrentText && SelectedCharacter.GetComponent<AllyHealth>().Health > 0)
                 {
                     nonvalid = false;
                     SelectedCharacterStats = SelectedCharacter.GetComponent<AllyAttackStat>();
