@@ -36,19 +36,23 @@ public class TypeAction : MonoBehaviour
         switch (CurrentText)
         {
             case "attack":
+                GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordPassed();
                 AttackHub.SetActive(true);
                 gameObject.SetActive(false);
                 break;
             case "switch":
+                GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordPassed();
                 SwitcHub.SetActive(true);
                 gameObject.SetActive(false);
                 break;
             case "item":
+                GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordPassed();
                 ItemHub.SetActive(true);
                 gameObject.SetActive(false);
                 break;
             default:
                 TextField.ActivateInputField();
+                GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordFail(TextField.text.Length);
                 break;
         }
         

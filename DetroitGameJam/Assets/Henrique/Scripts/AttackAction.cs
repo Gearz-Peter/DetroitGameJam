@@ -47,6 +47,7 @@ public class AttackAction : MonoBehaviour
             {
                 if(attackText[i] == CurrentText)
                 {
+                    GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordPassed();
                     nonvalid = false;
                     AttackSelected = i;
                     SelectHub.SetActive(true);
@@ -59,6 +60,7 @@ public class AttackAction : MonoBehaviour
             if(nonvalid)
             {
                 TextField.ActivateInputField();
+                GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordFail(TextField.text.Length);
 
             }
 

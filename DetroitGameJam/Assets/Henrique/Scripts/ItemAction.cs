@@ -79,6 +79,8 @@ public class ItemAction : MonoBehaviour
             {
                 if (itemText[i] == CurrentText && ItemQuantity[i] > 0)
                 {
+                    GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordPassed();
+
                     nonvalid = false;
                     ItemType = i;
                     //MainHub.SetActive(true);
@@ -91,6 +93,7 @@ public class ItemAction : MonoBehaviour
             if (nonvalid)
             {
                 TextField.ActivateInputField();
+                GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordFail(TextField.text.Length);
 
             }
 

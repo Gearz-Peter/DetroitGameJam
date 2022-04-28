@@ -79,7 +79,8 @@ public class SwitchAction : MonoBehaviour
                 if (allyText[i] == CurrentText && allyObjects[i].GetComponent<AllyHealth>().Health > 0 )
                 {
                     nonvalid = false;
-                    
+                    GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordPassed();
+
                     selectEnemyhub.SelectedCharacter = allyObjects[i];
                     ArrowObj.transform.position = allyObjects[i].transform.position;
                     ArrowObj.transform.Translate(0, 380, 0);
@@ -93,6 +94,7 @@ public class SwitchAction : MonoBehaviour
             if (nonvalid)
             {
                 TextField.ActivateInputField();
+                GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordFail(TextField.text.Length);
 
             }
 

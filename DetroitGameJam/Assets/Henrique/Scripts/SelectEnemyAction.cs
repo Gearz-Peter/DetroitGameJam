@@ -126,10 +126,12 @@ public class SelectEnemyAction : MonoBehaviour
                     nonvalid = false;
                     SelectedCharacterStats = SelectedCharacter.GetComponent<AllyAttackStat>();
 
+                    GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordPassed();
 
-                    switch(AttackType)
+                    switch (AttackType)
                     {
                         case 0:
+
                             attackvisual.AttackSingle(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
                             break;
                         case 1:
@@ -150,6 +152,8 @@ public class SelectEnemyAction : MonoBehaviour
 
             if (nonvalid)
             {
+                GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordFail(TextField.text.Length);
+
                 TextField.ActivateInputField();
 
             }

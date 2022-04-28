@@ -118,7 +118,7 @@ public class ItemUsedAction : MonoBehaviour
                     nonvalid = false;
 
                     itemTypeObj.Inventory.inventory.AddQuantity(itemtype, -1);
-
+                    GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordPassed();
                     switch (itemtype)
                     {
                         case 0:
@@ -148,6 +148,7 @@ public class ItemUsedAction : MonoBehaviour
             if (nonvalid)
             {
                 TextField.ActivateInputField();
+                GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordFail(TextField.text.Length);
 
             }
 
