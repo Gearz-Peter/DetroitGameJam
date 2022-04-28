@@ -93,6 +93,7 @@
     <Compile Include="Assets\Main\Scripts\WordsPerMinute.cs" />
     <Compile Include="Assets\Henrique\Scripts\RatScripts\KatanaRat.cs" />
     <Compile Include="Assets\Peter\Scripts\RatPatrol.cs" />
+    <Compile Include="Assets\Peter\Scripts\NPCPatrol.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

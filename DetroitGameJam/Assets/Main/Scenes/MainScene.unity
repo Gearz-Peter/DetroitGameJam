@@ -557,15 +557,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.48
+      value: -22.51
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.21
+      value: -7.12
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10201,6 +10201,22 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.2195122
       objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: max
+      value: -7.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: min
+      value: -10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: Yaxis
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: speedMod
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1028133424341189656, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_Name
       value: EnemyEncounter (4)
@@ -10243,11 +10259,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.58
+      value: -20.43
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.51
+      value: -9.59
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16860,6 +16876,18 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.70731705
       objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: max
+      value: -27.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: min
+      value: -29.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: speedMod
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1028133424341189656, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_Name
       value: EnemyEncounter (3)
@@ -16894,11 +16922,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.39
+      value: -29.418
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.19
+      value: -9.003
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.z
