@@ -7,11 +7,17 @@ public class RatPatrol : MonoBehaviour
     [SerializeField] private bool Yaxis;
     [SerializeField] private float min;
     [SerializeField] private float max;
-    [SerializeField] private float speed;
+    [SerializeField] private float speedMod;
+
+    public float speed;
 
     void Start()
     {
-        speed = -Mathf.Abs(speed);
+        speed = -speedMod;
+    }
+
+    private void Update()
+    {
         if (Yaxis)
         {
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed);
@@ -20,28 +26,28 @@ public class RatPatrol : MonoBehaviour
         {
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
         }
-    }
-
-    private void Update()
-    {
         if (Yaxis)
         {
-            if(this.transform.position.y > max && this.GetComponent<Rigidbody2D>().velocity.y > 0)
+            if (this.transform.localPosition.y > max && this.GetComponent<Rigidbody2D>().velocity.y > 0)
             {
-                
+                speed = -speedMod;
+            }
+            if (this.transform.localPosition.y < min && this.GetComponent<Rigidbody2D>().velocity.y < 0)
+            {
+                speed = speedMod;
             }
         }
         else
         {
-            if (this.transform.position.x > max && this.GetComponent<Rigidbody2D>().velocity.x > 0)
+            if (this.transform.localPosition.x > max && this.GetComponent<Rigidbody2D>().velocity.x > 0)
             {
                 this.transform.localScale = new Vector2(1, 1);
-                this.GetComponent<Rigidbody2D>().velocity = new Vector2(speed, 0);
+                speed = -speedMod;
             }
-            if (this.transform.position.x < min && this.GetComponent<Rigidbody2D>().velocity.x < 0)
+            if (this.transform.localPosition.x < min && this.GetComponent<Rigidbody2D>().velocity.x < 0)
             {
                 this.transform.localScale = new Vector2(-1, 1);
-                this.GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, 0);
+                speed = speedMod;
             }
         }
     }

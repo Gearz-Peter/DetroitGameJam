@@ -1686,6 +1686,18 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.2195122
       objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: max
+      value: -14.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: min
+      value: -16.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: speedMod
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1028133424341189656, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_Name
       value: EnemyEncounter (6)
@@ -1728,11 +1740,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.46
+      value: -15.77
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.24
+      value: -7.52
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8063,6 +8075,22 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.2195122
       objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: max
+      value: -12.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: min
+      value: -14.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: Yaxis
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: speedMod
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1028133424341189656, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_Name
       value: EnemyEncounter (5)
@@ -8093,7 +8121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalScale.x
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalScale.y
@@ -8105,11 +8133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.4
+      value: -15.243
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.64
+      value: -13.94
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10483,6 +10511,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: speedMod
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
@@ -10531,11 +10563,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.65
+      value: -21.86
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.43
+      value: -14.69
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.z

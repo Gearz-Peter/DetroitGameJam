@@ -28,6 +28,7 @@ public class Encounter : MonoBehaviour
     {
       
         GameObject.FindWithTag("Player").GetComponent<EnableDisable>().flip = true;
+        collider.GetComponent<RatPatrol>().speed = 0;
         Transition.TransitionONFunc();
         StartCoroutine(WaitingTransition(collider));
     }
