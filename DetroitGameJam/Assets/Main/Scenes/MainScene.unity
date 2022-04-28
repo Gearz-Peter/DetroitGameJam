@@ -8664,6 +8664,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flip: 0
+--- !u!114 &920943825 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2116897352, guid: 04ec7b4065f0ad24f908b85cda9c5dc8, type: 3}
+  m_PrefabInstance: {fileID: 920943819}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920943820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f650373f1c6286541a56f6fe5d6aa813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &925209237
 GameObject:
   m_ObjectHideFlags: 0
@@ -10462,6 +10473,22 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 0.2195122
       objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: max
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: min
+      value: -24
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
+      propertyPath: SpeedModifier
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1028133424341189656, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_Name
       value: EnemyEncounter
@@ -10504,11 +10531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.72
+      value: -21.65
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.67
+      value: -14.43
       objectReference: {fileID: 0}
     - target: {fileID: 9192969247927622967, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11471,6 +11498,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5519785194309767908, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: Inventory
+      value: 
+      objectReference: {fileID: 920943825}
     - target: {fileID: 8036206094537384674, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: TransitionOBJ
       value: 
