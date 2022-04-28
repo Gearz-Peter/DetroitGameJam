@@ -15,7 +15,7 @@ public class AttackingVisual : MonoBehaviour
 
     [SerializeField] GameObject[] AttackAnimes;
     [SerializeField] GameObject BattleCanvas;
-
+    [SerializeField] CameraShake BattleFieldShake;
 
     public void AttackSingle(GameObject SelectedCharacter, GameObject enemyObjects, Vector2 InitialPos, AllyAttackStat stats)
     {
@@ -63,6 +63,7 @@ public class AttackingVisual : MonoBehaviour
             }
         }
 
+        BattleFieldShake.ShakeCamera(15f, .3f, 0.05f);
 
         Instantiate(NormalAttackSound[Random.Range(0,NormalAttackSound.Length)], transform.position, Quaternion.identity);
         enemyObject.GetComponent<EnemyHealth>().DealDamage(stats.BasicDamage);
@@ -144,6 +145,7 @@ public class AttackingVisual : MonoBehaviour
 
                 }
 
+        BattleFieldShake.ShakeCamera(15f, .3f, 0.05f);
 
         Instantiate(BottleSound, transform.position, Quaternion.identity);
 
@@ -207,15 +209,18 @@ public class AttackingVisual : MonoBehaviour
             if(i == 200 || i == 400 || i == 600)
             {
                 Instantiate(WooshSound[Random.Range(0, WooshSound.Length)], transform.position, Quaternion.identity);
-
-                for (int a = 0; a < enemyObject.Length; a++)
+                if(i==600)
                 {
-                    yield return new WaitForSeconds(0.05f);
-                   
-                    Instantiate(AttackAnimes[2], enemyObject[a].transform.position, Quaternion.identity, BattleCanvas.transform);
+                    for (int a = 0; a < enemyObject.Length; a++)
+                    {
+                        yield return new WaitForSeconds(0.05f);
 
-                  
+                        Instantiate(AttackAnimes[2], enemyObject[a].transform.position, Quaternion.identity, BattleCanvas.transform);
+
+
+                    }
                 }
+              
 
                
             }
@@ -224,6 +229,7 @@ public class AttackingVisual : MonoBehaviour
             RotateSpeed += Time.deltaTime * 5;
         }
 
+        BattleFieldShake.ShakeCamera(15f, .3f, 0.05f);
 
         for (int i=0;i<enemyObject.Length;i++)
         {

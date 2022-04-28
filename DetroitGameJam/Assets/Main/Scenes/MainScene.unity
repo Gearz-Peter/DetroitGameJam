@@ -884,7 +884,6 @@ GameObject:
   - component: {fileID: 89067147}
   - component: {fileID: 89067146}
   - component: {fileID: 89067145}
-  - component: {fileID: 89067144}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -892,18 +891,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &89067144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89067143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8db40f2c3d9b70045bc2e70ab3fd5ef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!81 &89067145
 AudioListener:
   m_ObjectHideFlags: 0
@@ -8288,6 +8275,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 709463022702204831, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2870490015916347603, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -4.275902
@@ -8314,15 +8305,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016404941280, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: Health
-      value: 20
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016404941280, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: MaxHealth
-      value: 20
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016404941310, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: BasicDamage
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016481968055, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -8346,11 +8337,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016864234987, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: Health
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2870490016864234987, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: MaxHealth
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017244916715, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8375,7 +8366,7 @@ PrefabInstance:
     - target: {fileID: 2870490017357048676, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: AttackAnimes.Array.data[1]
       value: 
-      objectReference: {fileID: 2293848317934768634, guid: d7c069913e1c01b4487a5df3bdd56f2b, type: 3}
+      objectReference: {fileID: 6048083485076476928, guid: 2ced5a270ec7e4645a362c12c7db3e79, type: 3}
     - target: {fileID: 2870490017357048676, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: AttackAnimes.Array.data[2]
       value: 
@@ -8486,15 +8477,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017536498583, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: BasicDamage
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017536498585, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: Health
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017536498585, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: MaxHealth
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2870490017569967908, guid: fe24204872ceeb04191d5ee49a8bc068, type: 3}
       propertyPath: m_AnchorMax.x
