@@ -13,8 +13,8 @@ public class AttackingVisual : MonoBehaviour
     [SerializeField] GameObject MetalAttackSound,BottleSound;
     [SerializeField] Transform AOEposition;
 
-
-
+    [SerializeField] GameObject[] AttackAnimes;
+    [SerializeField] GameObject BattleCanvas;
 
 
     public void AttackSingle(GameObject SelectedCharacter, GameObject enemyObjects, Vector2 InitialPos, AllyAttackStat stats)
@@ -56,6 +56,11 @@ public class AttackingVisual : MonoBehaviour
         {
             SelectedCharacter.transform.Rotate(0, 0, -10);
             yield return null;
+
+            if(i == 10)
+            {
+                Instantiate(AttackAnimes[0], enemyObject.transform.position, Quaternion.identity, BattleCanvas.transform);
+            }
         }
 
 
@@ -132,6 +137,11 @@ public class AttackingVisual : MonoBehaviour
             SelectedCharacter.transform.position = new Vector2(SelectedCharacter.transform.position.x + Random.Range(-15, 15), SelectedCharacter.transform.position.y + Random.Range(-15, 15));
             yield return new WaitForSeconds(0.01f);
             SelectedCharacter.transform.position = oldPos;
+            if(i == 20)
+            {
+                Instantiate(AttackAnimes[1], enemyObject.transform.position, Quaternion.identity, BattleCanvas.transform);
+            }
+
                 }
 
 
@@ -198,11 +208,23 @@ public class AttackingVisual : MonoBehaviour
             {
                 Instantiate(WooshSound[Random.Range(0, WooshSound.Length)], transform.position, Quaternion.identity);
 
+                for (int a = 0; a < enemyObject.Length; a++)
+                {
+                    yield return new WaitForSeconds(0.05f);
+                   
+                    Instantiate(AttackAnimes[2], enemyObject[a].transform.position, Quaternion.identity, BattleCanvas.transform);
+
+                  
+                }
+
+               
             }
 
             yield return null;
             RotateSpeed += Time.deltaTime * 5;
         }
+
+
         for (int i=0;i<enemyObject.Length;i++)
         {
             yield return new WaitForSeconds(0.05f);

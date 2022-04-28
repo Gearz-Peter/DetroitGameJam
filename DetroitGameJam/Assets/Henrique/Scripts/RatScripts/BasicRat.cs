@@ -7,7 +7,7 @@ public class BasicRat : MonoBehaviour
     [SerializeField] GameObject AllieList;
     [SerializeField] GameObject[] AllyObjs;
 
-    Vector2 BeforeInitialPos;
+    Vector3 BeforeInitialPos;
     GameObject SelectedCharacterBefore;
 
     IEnumerator AttackCoroutine,PickFightCoroutine;
@@ -24,12 +24,14 @@ public class BasicRat : MonoBehaviour
     [SerializeField] GameObject EnemyObject;
         float TimeToAttack;
 
-    Vector2 InitialPosition;
+    Vector3 InitialPosition;
 
 
     private void OnEnable()
     {
+        
         InitialPosition = transform.position;
+        Debug.Log(InitialPosition.z);
         TimeToAttack = Random.Range(4, 10);
     }
 
@@ -89,7 +91,7 @@ public class BasicRat : MonoBehaviour
 
 
 
-    public void AttackSingle(GameObject SelectedCharacter, GameObject enemyObjects, Vector2 InitialPos, RatAttackStats stats)
+    public void AttackSingle(GameObject SelectedCharacter, GameObject enemyObjects, Vector3 InitialPos, RatAttackStats stats)
     {
         if (AttackCoroutine != null)
         {
@@ -103,7 +105,7 @@ public class BasicRat : MonoBehaviour
         StartCoroutine(AttackCoroutine);
 
     }
-    IEnumerator AttackingNumerator(GameObject SelectedCharacter, GameObject enemyObject, Vector2 InitialPos, RatAttackStats stats)
+    IEnumerator AttackingNumerator(GameObject SelectedCharacter, GameObject enemyObject, Vector3 InitialPos, RatAttackStats stats)
     {
 
 
@@ -111,7 +113,7 @@ public class BasicRat : MonoBehaviour
         while (Vector2.Distance(SelectedCharacter.transform.position, enemyObject.transform.position) > 250)
         {
 
-            SelectedCharacter.transform.position = Vector2.Lerp(SelectedCharacter.transform.position, enemyObject.transform.position, 7 * Time.deltaTime);
+            SelectedCharacter.transform.position = Vector3.Lerp(SelectedCharacter.transform.position, enemyObject.transform.position, 7 * Time.deltaTime);
             yield return null;
         }
         yield return new WaitForSeconds(.1f);
@@ -144,7 +146,7 @@ public class BasicRat : MonoBehaviour
 
         while (Vector2.Distance(SelectedCharacter.transform.position, InitialPos) > 50 || SelectedCharacter.transform.eulerAngles.z > 15)
         {
-            SelectedCharacter.transform.position = Vector2.Lerp(SelectedCharacter.transform.position, InitialPos, 15 * Time.deltaTime);
+            SelectedCharacter.transform.position = Vector3.Lerp(SelectedCharacter.transform.position, InitialPos, 15 * Time.deltaTime);
 
 
             if (SelectedCharacter.transform.eulerAngles.z > 15)
@@ -157,6 +159,7 @@ public class BasicRat : MonoBehaviour
         SelectedCharacter.transform.rotation = new Quaternion(0, 0, 0, 0);
         SelectedCharacter.transform.position = InitialPos;
 
+        Debug.Log(InitialPosition.z);
     }
 
 

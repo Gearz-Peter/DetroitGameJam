@@ -15,6 +15,9 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] Image spriteI;
     Vector3 ImageInitialPosition;
+    [SerializeField] GameObject[] HurtSounds;
+    [SerializeField] GameObject DeathSound;
+
     private void OnEnable()
     {
       
@@ -32,6 +35,10 @@ public class EnemyHealth : MonoBehaviour
 
     public void DealDamage(int amout)
     {
+        if(Health > 0)
+        {
+
+      
         Health -= amout;
         HealthSlider.value = Health;
 
@@ -46,12 +53,17 @@ public class EnemyHealth : MonoBehaviour
         StartCoroutine(FlashRedNumerator());
         StartCoroutine(ShakeNumerator());
 
+        Instantiate(HurtSounds[Random.Range(0,HurtSounds.Length)], transform.position, Quaternion.identity);
+        }
 
-        if(Health <= 0)
+        if (Health <= 0)
         {
             spriteI.GetComponent<Animator>().enabled = false;
             
             spriteI.color = new Color(spriteI.color.r, spriteI.color.g, spriteI.color.b, .5f);
+
+            Instantiate(DeathSound, transform.position, Quaternion.identity);
+
         }
     }
 

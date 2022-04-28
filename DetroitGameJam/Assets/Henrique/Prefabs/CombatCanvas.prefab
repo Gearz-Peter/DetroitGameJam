@@ -2170,6 +2170,9 @@ MonoBehaviour:
   DamageNumberPrefab: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
   BattleCanvas: {fileID: 2870490017522041097}
   spriteI: {fileID: 5329097510122331514}
+  HurtSounds:
+  - {fileID: 2752308782858997469, guid: 8e8e77c099a82394ba63d7bc85bdacfd, type: 3}
+  DeathSound: {fileID: 5378953632512036590, guid: ad6bff22165b6bd45b6f07353af21c32, type: 3}
 --- !u!114 &2870490016404941281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3139,7 +3142,7 @@ GameObject:
   - component: {fileID: 2870490016864234984}
   - component: {fileID: 2870490016864234985}
   m_Layer: 5
-  m_Name: Enemy3
+  m_Name: Enemy3Trash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3196,6 +3199,9 @@ MonoBehaviour:
   DamageNumberPrefab: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
   BattleCanvas: {fileID: 2870490017522041097}
   spriteI: {fileID: 3591496640878704414}
+  HurtSounds:
+  - {fileID: 3881348575466909501, guid: 1c0488371317f9145bd0adfffa3272ce, type: 3}
+  DeathSound: {fileID: 3881348575466909501, guid: 1c0488371317f9145bd0adfffa3272ce, type: 3}
 --- !u!114 &2870490016864234984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4558,7 +4564,7 @@ GameObject:
   - component: {fileID: 2870490017536498582}
   - component: {fileID: 2870490017536498583}
   m_Layer: 5
-  m_Name: Enemy2
+  m_Name: Enemy2Rad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4615,6 +4621,9 @@ MonoBehaviour:
   DamageNumberPrefab: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
   BattleCanvas: {fileID: 2870490017522041097}
   spriteI: {fileID: 2901530745871329087}
+  HurtSounds:
+  - {fileID: 4451818485495654862, guid: 96e2ff3754d04944eac766fe5b11fc64, type: 3}
+  DeathSound: {fileID: 5378953632512036590, guid: ad6bff22165b6bd45b6f07353af21c32, type: 3}
 --- !u!114 &2870490017536498582
 MonoBehaviour:
   m_ObjectHideFlags: 0
