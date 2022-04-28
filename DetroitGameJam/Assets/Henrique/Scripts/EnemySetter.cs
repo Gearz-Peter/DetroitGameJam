@@ -18,7 +18,7 @@ public class EnemySetter : MonoBehaviour
         }
         for (int i = 0; i < EnemiesPos3.Length; i++)
         {
-            EnemiesPos1[3].SetActive(false);
+            EnemiesPos3[i].SetActive(false);
         }
 
 

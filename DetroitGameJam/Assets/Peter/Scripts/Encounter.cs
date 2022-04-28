@@ -42,7 +42,7 @@ public class Encounter : MonoBehaviour
         yield return new WaitForSeconds(1);
         BattleCanvas.SetActive(true);
 
-        BattleCanvas.GetComponent<EnemySetter>().GetInfo(collider.GetComponent<EncounterInfo>().EnemyIds;);
+        BattleCanvas.GetComponent<EnemySetter>().GetInfo(collider.GetComponent<EncounterInfo>().EnemyIds);
 
         Transition.TransitionOFFFunc();
 

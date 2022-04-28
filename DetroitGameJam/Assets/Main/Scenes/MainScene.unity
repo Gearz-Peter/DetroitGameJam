@@ -10499,15 +10499,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 164797136757024988, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: EnemyIds.Array.data[0]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 164797136757024988, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: EnemyIds.Array.data[1]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 164797136757024988, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: EnemyIds.Array.data[2]
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 193561230298796146, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
