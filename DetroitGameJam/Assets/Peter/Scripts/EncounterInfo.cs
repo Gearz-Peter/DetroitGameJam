@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class EncounterInfo : MonoBehaviour
 {
-    [SerializeField] private int[] EnemyIds = new int[3];
+    [SerializeField] public int[] EnemyIds = new int[3];
 }

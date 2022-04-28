@@ -13960,6 +13960,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1800201625}
     m_Modifications:
+    - target: {fileID: 2192554117510633083, guid: 2d4ee23360efdee4faae5ca781dcfa9e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c5ea42ca07b4c3044a0f569ec014967a, type: 2}
     - target: {fileID: 2346637011685949330, guid: 2d4ee23360efdee4faae5ca781dcfa9e, type: 3}
       propertyPath: m_Radius
       value: 0.78515416
@@ -16886,7 +16890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 539012137772860927, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: speedMod
-      value: 0.5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1028133424341189656, guid: c94d18e8453a16141b1b9bf7f801dfe3, type: 3}
       propertyPath: m_Name

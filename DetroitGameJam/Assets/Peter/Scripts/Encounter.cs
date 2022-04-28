@@ -26,7 +26,6 @@ public class Encounter : MonoBehaviour
 
     void DoEncounter(Collider2D collider)
     {
-      
         GameObject.FindWithTag("Player").GetComponent<EnableDisable>().flip = true;
         collider.GetComponent<RatPatrol>().speed = 0;
         Transition.TransitionONFunc();
@@ -42,6 +41,9 @@ public class Encounter : MonoBehaviour
         }
         yield return new WaitForSeconds(1);
         BattleCanvas.SetActive(true);
+
+        BattleCanvas.GetComponent<EnemySetter>().GetInfo(collider.GetComponent<EncounterInfo>().EnemyIds;);
+
         Transition.TransitionOFFFunc();
 
 

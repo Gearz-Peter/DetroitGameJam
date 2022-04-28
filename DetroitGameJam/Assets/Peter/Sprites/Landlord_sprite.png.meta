@@ -1,0 +1,396 @@
+fileFormatVersion: 2
+guid: 21c9499583fcd9b4aa66ec0ca1c916e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5361633874273850256
+    second: Landlord_sprite_0
+  - first:
+      213: 3797514315245112266
+    second: Landlord_sprite_1
+  - first:
+      213: 4442922361144089233
+    second: Landlord_sprite_2
+  - first:
+      213: -5607817327280986747
+    second: Landlord_sprite_3
+  - first:
+      213: 4095640199316834699
+    second: Landlord_sprite_4
+  - first:
+      213: -7855988699430837470
+    second: Landlord_sprite_5
+  - first:
+      213: -3386443904642055375
+    second: Landlord_sprite_6
+  - first:
+      213: -5040429312466482550
+    second: Landlord_sprite_7
+  - first:
+      213: -6573229251333304270
+    second: Landlord_sprite_8
+  - first:
+      213: -7884916629969218115
+    second: Landlord_sprite_9
+  - first:
+      213: -4378683849810893918
+    second: Landlord_sprite_10
+  - first:
+      213: -3407993170509751410
+    second: Landlord_sprite_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 410
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Landlord_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1267.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0935bcbf999586a40800000000000000
+      internalID: 5361633874273850256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1267.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb45ad462b73b430800000000000000
+      internalID: 3797514315245112266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1267.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a12ac095e68ad30800000000000000
+      internalID: 4442922361144089233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 845.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 585e2223ad70d22b0800000000000000
+      internalID: -5607817327280986747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 845.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b890718cf03a6d830800000000000000
+      internalID: 4095640199316834699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 845.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22321f296ebe9f290800000000000000
+      internalID: -7855988699430837470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 423.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133060cf53fe001d0800000000000000
+      internalID: -3386443904642055375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 423.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a08f2ee3ccc0ab0800000000000000
+      internalID: -5040429312466482550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 423.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230521782d237c4a0800000000000000
+      internalID: -6573229251333304270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db55d13e916239290800000000000000
+      internalID: -7884916629969218115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 1.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a32844ec3acb33c0800000000000000
+      internalID: -4378683849810893918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Landlord_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1.5
+        width: 203.33333
+        height: 422.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b1fca844064b0d0800000000000000
+      internalID: -3407993170509751410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
