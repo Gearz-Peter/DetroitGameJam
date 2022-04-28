@@ -8,6 +8,9 @@ public class Encounter : MonoBehaviour
     private Canvas canvas;
     [SerializeField] TransitionAnim Transition;
     [SerializeField] GameObject BattleCanvas;
+
+    public int ratsBeat = 0;
+
     void start()
     {
         canvas = GameObject.FindWithTag("OverworldCanvas").GetComponent<Canvas>();
@@ -55,6 +58,7 @@ public class Encounter : MonoBehaviour
         Transition.TransitionOFFFunc();
         GameObject.FindWithTag("Player").GetComponent<EnableDisable>().flip = true;
         Destroy(collider.gameObject);
+        ratsBeat++;
 
     }
 }
