@@ -1,0 +1,1548 @@
+fileFormatVersion: 2
+guid: c9b96498056ac8746ae7a66a244e9760
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1106149101069339741
+    second: NPCs_upscaled_transparent_0
+  - first:
+      213: -4759864495032047739
+    second: NPCs_upscaled_transparent_1
+  - first:
+      213: -8874732298978983527
+    second: NPCs_upscaled_transparent_2
+  - first:
+      213: -3952721833289241320
+    second: NPCs_upscaled_transparent_3
+  - first:
+      213: -6611809163401969384
+    second: NPCs_upscaled_transparent_4
+  - first:
+      213: -9142811830777992084
+    second: NPCs_upscaled_transparent_5
+  - first:
+      213: -5468599472855720833
+    second: NPCs_upscaled_transparent_6
+  - first:
+      213: 3407626980139920047
+    second: NPCs_upscaled_transparent_7
+  - first:
+      213: 3688394285677824378
+    second: NPCs_upscaled_transparent_8
+  - first:
+      213: 711587111920947670
+    second: NPCs_upscaled_transparent_9
+  - first:
+      213: -1637009028874790568
+    second: NPCs_upscaled_transparent_10
+  - first:
+      213: 7945718922541412050
+    second: NPCs_upscaled_transparent_11
+  - first:
+      213: -2611052673942767524
+    second: NPCs_upscaled_transparent_12
+  - first:
+      213: 6387997439907883471
+    second: NPCs_upscaled_transparent_13
+  - first:
+      213: -615942911752630161
+    second: NPCs_upscaled_transparent_14
+  - first:
+      213: -7894158596375144579
+    second: NPCs_upscaled_transparent_15
+  - first:
+      213: -6182336105960677776
+    second: NPCs_upscaled_transparent_16
+  - first:
+      213: -2506440600987189818
+    second: NPCs_upscaled_transparent_17
+  - first:
+      213: 7760817220813853527
+    second: NPCs_upscaled_transparent_18
+  - first:
+      213: 4928454572593794151
+    second: NPCs_upscaled_transparent_19
+  - first:
+      213: -5680622783172297018
+    second: NPCs_upscaled_transparent_20
+  - first:
+      213: 4190171768700086350
+    second: NPCs_upscaled_transparent_21
+  - first:
+      213: 3458820455271753358
+    second: NPCs_upscaled_transparent_22
+  - first:
+      213: -8534130268457523269
+    second: NPCs_upscaled_transparent_23
+  - first:
+      213: -6613420468935674033
+    second: NPCs_upscaled_transparent_24
+  - first:
+      213: 3209219038519553392
+    second: NPCs_upscaled_transparent_25
+  - first:
+      213: -5410319103075836450
+    second: NPCs_upscaled_transparent_26
+  - first:
+      213: -8377453618849203158
+    second: NPCs_upscaled_transparent_27
+  - first:
+      213: 1344119968134281707
+    second: NPCs_upscaled_transparent_28
+  - first:
+      213: 6796204058097082885
+    second: NPCs_upscaled_transparent_29
+  - first:
+      213: 8489439818421104460
+    second: NPCs_upscaled_transparent_30
+  - first:
+      213: 4260272332755477011
+    second: NPCs_upscaled_transparent_31
+  - first:
+      213: 478361344969438819
+    second: NPCs_upscaled_transparent_32
+  - first:
+      213: 8629960085547628701
+    second: NPCs_upscaled_transparent_33
+  - first:
+      213: 2217018933644318222
+    second: NPCs_upscaled_transparent_34
+  - first:
+      213: 1000818595419116091
+    second: NPCs_upscaled_transparent_35
+  - first:
+      213: -390243563312813888
+    second: NPCs_upscaled_transparent_36
+  - first:
+      213: -8230955229996996263
+    second: NPCs_upscaled_transparent_37
+  - first:
+      213: 7142110630008979440
+    second: NPCs_upscaled_transparent_38
+  - first:
+      213: 7579266532851987555
+    second: NPCs_upscaled_transparent_39
+  - first:
+      213: 5415702558037916437
+    second: NPCs_upscaled_transparent_40
+  - first:
+      213: 7335295724314806093
+    second: NPCs_upscaled_transparent_41
+  - first:
+      213: 8291111161278753202
+    second: NPCs_upscaled_transparent_42
+  - first:
+      213: -4927686264710245706
+    second: NPCs_upscaled_transparent_43
+  - first:
+      213: -7176982122854059318
+    second: NPCs_upscaled_transparent_44
+  - first:
+      213: -3065685590729248381
+    second: NPCs_upscaled_transparent_45
+  - first:
+      213: 7573943681544658242
+    second: NPCs_upscaled_transparent_46
+  - first:
+      213: 2891385919807074103
+    second: NPCs_upscaled_transparent_47
+  - first:
+      213: 7931342278344626330
+    second: NPCs_upscaled_transparent_48
+  - first:
+      213: 3423187275256958825
+    second: NPCs_upscaled_transparent_49
+  - first:
+      213: -3822396341555542372
+    second: NPCs_upscaled_transparent_50
+  - first:
+      213: -208954592954033893
+    second: NPCs_upscaled_transparent_51
+  - first:
+      213: -849999605816963152
+    second: NPCs_upscaled_transparent_52
+  - first:
+      213: 3231910264406127039
+    second: NPCs_upscaled_transparent_53
+  - first:
+      213: 8378756789873800291
+    second: NPCs_upscaled_transparent_54
+  - first:
+      213: 2600118526905074087
+    second: NPCs_upscaled_transparent_55
+  - first:
+      213: -2510258748439690923
+    second: NPCs_upscaled_transparent_56
+  - first:
+      213: 3163595340968070988
+    second: NPCs_upscaled_transparent_57
+  - first:
+      213: -2465399180289033859
+    second: NPCs_upscaled_transparent_58
+  - first:
+      213: 8048785455371324607
+    second: NPCs_upscaled_transparent_59
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 410
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1270
+        width: 190
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c0bdd2fb4d95f00800000000000000
+      internalID: 1106149101069339741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1270
+        width: 190
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 587ee9ae57091fdb0800000000000000
+      internalID: -4759864495032047739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1270
+        width: 190
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9910ca29efd96d480800000000000000
+      internalID: -8874732298978983527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1270
+        width: 190
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d2dde5f6c1529c0800000000000000
+      internalID: -3952721833289241320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1270
+        width: 190
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811c0c4c8922e34a0800000000000000
+      internalID: -6611809163401969384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 1270
+        width: 190
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c2d32a4153e1180800000000000000
+      internalID: -9142811830777992084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1270
+        width: 150
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7cdb89d0c1ab14b0800000000000000
+      internalID: -5468599472855720833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1270
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faae64e1fa25a4f20800000000000000
+      internalID: 3407626980139920047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 1270
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7948659f0fcf2330800000000000000
+      internalID: 3688394285677824378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 1270
+        width: 150
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d15bc845b010e900800000000000000
+      internalID: 711587111920947670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 1270
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8599fc326fc2849e0800000000000000
+      internalID: -1637009028874790568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 1270
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de2e27034dd44e60800000000000000
+      internalID: 7945718922541412050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 1270
+        width: 150
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58becf4d6da3cbd0800000000000000
+      internalID: -2611052673942767524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 1270
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc960d793d9b6a850800000000000000
+      internalID: 6387997439907883471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 1270
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6090176f2bb377f0800000000000000
+      internalID: -615942911752630161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 850
+        width: 190
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d779676e490527290800000000000000
+      internalID: -7894158596375144579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 850
+        width: 190
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e542a211ee33aa0800000000000000
+      internalID: -6182336105960677776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 850
+        width: 190
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdba879d85573dd0800000000000000
+      internalID: -2506440600987189818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 850
+        width: 190
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753185dc426f3bb60800000000000000
+      internalID: 7760817220813853527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 850
+        width: 190
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c4a1b5253656440800000000000000
+      internalID: 4928454572593794151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 850
+        width: 190
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce360a0daf5a21b0800000000000000
+      internalID: -5680622783172297018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 850
+        width: 150
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e482d3de50b762a30800000000000000
+      internalID: 4190171768700086350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 850
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86e352e0e2300030800000000000000
+      internalID: 3458820455271753358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 850
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb72ea19cbda09980800000000000000
+      internalID: -8534130268457523269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 850
+        width: 150
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47bac67f196834a0800000000000000
+      internalID: -6613420468935674033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 850
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07de06d56bf698c20800000000000000
+      internalID: 3209219038519553392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 850
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd97abd07faae4b0800000000000000
+      internalID: -5410319103075836450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 850
+        width: 150
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cbe2eb15e4dbb80800000000000000
+      internalID: -8377453618849203158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_28
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 850
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be937245df547a210800000000000000
+      internalID: 1344119968134281707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_29
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 850
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502e1ff3597f05e50800000000000000
+      internalID: 6796204058097082885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_30
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 430
+        width: 140
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4feb0f298c80d570800000000000000
+      internalID: 8489439818421104460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_31
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 430
+        width: 150
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312a0506d178f1b30800000000000000
+      internalID: 4260272332755477011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_32
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 430
+        width: 150
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3667e29db1b73a600800000000000000
+      internalID: 478361344969438819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_33
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 430
+        width: 140
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98bddc69f6c3c770800000000000000
+      internalID: 8629960085547628701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_34
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 430
+        width: 160
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e065f2059fe64ce10800000000000000
+      internalID: 2217018933644318222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_35
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 430
+        width: 160
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32df80c53f93ed00800000000000000
+      internalID: 1000818595419116091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_36
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 430
+        width: 120
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c86bd8fb83959af0800000000000000
+      internalID: -390243563312813888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_37
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 430
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 959a2e9e3d5c5cd80800000000000000
+      internalID: -8230955229996996263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_38
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 430
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fff93807cfdd1360800000000000000
+      internalID: 7142110630008979440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_39
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 430
+        width: 120
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36436a441c6fe2960800000000000000
+      internalID: 7579266532851987555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_40
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 430
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b360d68c0782b40800000000000000
+      internalID: 5415702558037916437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_41
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 430
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47c932e8943cc560800000000000000
+      internalID: 7335295724314806093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_42
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 430
+        width: 140
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9eb494ca1ff0370800000000000000
+      internalID: 8291111161278753202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_43
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 430
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2df5343775d9bb0800000000000000
+      internalID: -4927686264710245706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_44
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 430
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac274f7d8cc366c90800000000000000
+      internalID: -7176982122854059318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_45
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 10
+        width: 140
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381bc8ba23f7475d0800000000000000
+      internalID: -3065685590729248381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_46
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 10
+        width: 150
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d984f56ad0c1960800000000000000
+      internalID: 7573943681544658242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_47
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 10
+        width: 150
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73faaa2cc24402820800000000000000
+      internalID: 2891385919807074103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_48
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 10
+        width: 140
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90d4c4b7c9c11e60800000000000000
+      internalID: 7931342278344626330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_49
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 10
+        width: 160
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f0455a0ba918f20800000000000000
+      internalID: 3423187275256958825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_50
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 10
+        width: 160
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9644de77ce14fac0800000000000000
+      internalID: -3822396341555542372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_51
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 10
+        width: 120
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19d9c0a7e4a91df0800000000000000
+      internalID: -208954592954033893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_52
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 10
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfce0cacd13434f0800000000000000
+      internalID: -849999605816963152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_53
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 10
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1bdd7134d0adc20800000000000000
+      internalID: 3231910264406127039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_54
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 10
+        width: 120
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364f1d768e2574470800000000000000
+      internalID: 8378756789873800291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_55
+      rect:
+        serializedVersion: 2
+        x: 2030
+        y: 10
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1c612360a751420800000000000000
+      internalID: 2600118526905074087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_56
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 10
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5518fecd7f4c92dd0800000000000000
+      internalID: -2510258748439690923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_57
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 10
+        width: 140
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4f8b7f733957eb20800000000000000
+      internalID: 3163595340968070988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_58
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 10
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79355df18429cdd0800000000000000
+      internalID: -2465399180289033859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPCs_upscaled_transparent_59
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 10
+        width: 150
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc0db43ab703bf60800000000000000
+      internalID: 8048785455371324607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

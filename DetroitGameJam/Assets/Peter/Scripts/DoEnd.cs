@@ -15,7 +15,8 @@ public class DoEnd : MonoBehaviour
     {
         if (collider.tag == "End")
         {
-            if (GameObject.FindWithTag("Player").GetComponent<Items>().QuestItems.Count >= 4)
+            endScreen.sprite = mehEnd;
+            if (GameObject.FindWithTag("Player").GetComponent<Items>().QuestItems.Count >= 5)
             {
                 endScreen.sprite = goodEnd;
             }
