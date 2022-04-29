@@ -12,6 +12,7 @@ TagManager:
   - OverworldCanvas
   - End
   - EndCanvas
+  - LossCanvas
   layers:
   - Default
   - TransparentFX
