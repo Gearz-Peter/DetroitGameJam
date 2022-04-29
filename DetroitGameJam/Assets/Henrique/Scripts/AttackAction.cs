@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class AttackAction : MonoBehaviour
 {
+   
+
     [SerializeField] InputField TextField;
 
     string CurrentText;
@@ -14,7 +16,11 @@ public class AttackAction : MonoBehaviour
     [SerializeField] GameObject MenuHub,SelectHub;
 
 
+
+
     public int AttackSelected=0;
+
+   
 
     private void Update()
     {

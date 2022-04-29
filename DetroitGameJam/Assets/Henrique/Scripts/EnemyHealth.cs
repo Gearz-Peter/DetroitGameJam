@@ -9,10 +9,11 @@ public class EnemyHealth : MonoBehaviour
     
     [SerializeField] Slider HealthSlider;
     [SerializeField] GameObject DebuffPanel;
-    [SerializeField] GameObject BleedIcon;
+    [SerializeField] GameObject BleedIcon,CovidIcon;
     [SerializeField] GameObject DamageNumberPrefab;
     [SerializeField] GameObject BattleCanvas;
 
+    RatAttackStats Stats;
     [SerializeField] Image spriteI;
     Vector3 ImageInitialPosition;
     [SerializeField] GameObject[] HurtSounds;
@@ -21,7 +22,11 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] GameObject HealCrossPrefab;
     [SerializeField] GameObject HealNumberPrefab;
-   
+
+    private void Start()
+    {
+        Stats = GetComponent<RatAttackStats>();
+    }
 
     private void OnEnable()
     {
@@ -70,6 +75,11 @@ public class EnemyHealth : MonoBehaviour
 
     public void DealDamage(int amout)
     {
+        if(amout <= 0)
+        {
+            return;
+        }
+
         if(Health > 0)
         {
 
@@ -94,7 +104,7 @@ public class EnemyHealth : MonoBehaviour
         if (Health <= 0)
         {
             spriteI.GetComponent<Animator>().enabled = false;
-            
+
             spriteI.color = new Color(spriteI.color.r, spriteI.color.g, spriteI.color.b, .5f);
 
             Instantiate(DeathSound, transform.position, Quaternion.identity);
@@ -118,10 +128,10 @@ public class EnemyHealth : MonoBehaviour
 
     IEnumerator FlashRedNumerator()
     {
-       
+        Color oldColor = spriteI.color;
         spriteI.color = new Color(1, 0, 0, spriteI.color.a);
         yield return new WaitForSeconds(.3f);
-        spriteI.color = new Color(1, 1, 1, spriteI.color.a);
+        spriteI.color = oldColor;
     }
 
 
@@ -141,6 +151,28 @@ public class EnemyHealth : MonoBehaviour
 
         }
         
+    }
+
+
+    public void ApplyCovid()
+    {
+
+        StartCoroutine(CovidNumerator());
+    }
+    IEnumerator CovidNumerator()
+    {
+        GameObject obj = Instantiate(CovidIcon, transform.position, Quaternion.identity, DebuffPanel.transform);
+        Destroy(obj, 13);
+
+        Stats.BasicDamage -= 3;
+        spriteI.color = new Color(0, 1, 0, spriteI.color.a);
+        yield return new WaitForSeconds(13);
+        spriteI.color = new Color(1, 1, 1, spriteI.color.a);
+        Stats.BasicDamage += 3;
+
+
+
+
     }
 
 

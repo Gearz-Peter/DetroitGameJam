@@ -11,7 +11,9 @@ public class SelectEnemyAction : MonoBehaviour
     [SerializeField] string[] enemyText;
     [SerializeField] GameObject[] enemyObjects;
     [SerializeField] Text[] enemyTextsUI;
-    [SerializeField] GameObject AttackHub,MainHub;
+    [SerializeField] GameObject MainHub;
+    [SerializeField] GameObject[] AttackHubs;
+
 
     public GameObject SelectedCharacter;
 
@@ -20,7 +22,7 @@ public class SelectEnemyAction : MonoBehaviour
     Vector2 InitialPos;
 
     [SerializeField] AttackingVisual attackvisual;
-    [SerializeField] AttackAction AttackActionHud;
+   
 
     public int AttackType;
 
@@ -39,7 +41,7 @@ public class SelectEnemyAction : MonoBehaviour
 
     private void OnEnable()
     {
-        AttackType = AttackActionHud.AttackSelected;
+        AttackType = AttackHubs[GetID() ].GetComponent<AttackAction>().AttackSelected;
 
         TextField.ActivateInputField();
          InitialPos = SelectedCharacter.transform.position;
@@ -105,6 +107,67 @@ public class SelectEnemyAction : MonoBehaviour
 
     }
 
+    public int GetID()
+    {
+        return SelectedCharacter.GetComponent<AllyID>().ID;
+    }
+
+   void AttackSingleCall(int i)
+    {
+        int id = GetID();
+
+        switch(id)
+        {
+            case 0:
+               SelectedCharacter.GetComponentInChildren<AttackingVisual>().AttackSingle(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
+                break;
+
+            case 1:
+                SelectedCharacter.GetComponentInChildren<AttackVisualsShanky>().AttackSingle(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
+
+                break;
+        }
+
+    }
+
+    void SpecialAttackCall(int i)
+    {
+        int id = GetID();
+
+        switch (id)
+        {
+            case 0:
+                SelectedCharacter.GetComponentInChildren<AttackingVisual>().AttackSpecial(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
+                break;
+
+            case 1:
+                SelectedCharacter.GetComponentInChildren<AttackVisualsShanky>().AttackSpecial(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
+
+                break;
+        }
+    }
+
+    void AOEAttackCall()
+    {
+        int id = GetID();
+
+        switch (id)
+        {
+            case 0:
+             
+                SelectedCharacter.GetComponentInChildren<AttackingVisual>().AttackAOE(SelectedCharacter, enemyObjects, InitialPos, SelectedCharacterStats);
+                break;
+
+            case 1:
+                SelectedCharacter.GetComponentInChildren<AttackVisualsShanky>().AttackAOE(SelectedCharacter, enemyObjects, InitialPos, SelectedCharacterStats);
+
+                break;
+        }
+
+
+      
+    }
+
     void WeaponSelect()
     {
         CurrentText = TextField.text.ToLower();
@@ -112,7 +175,7 @@ public class SelectEnemyAction : MonoBehaviour
 
         if (CurrentText == "back")
         {
-            AttackHub.SetActive(true);
+            AttackHubs[GetID()].SetActive(true);
             gameObject.SetActive(false);
         }
         else
@@ -132,14 +195,15 @@ public class SelectEnemyAction : MonoBehaviour
                     {
                         case 0:
 
-                            attackvisual.AttackSingle(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
+                            AttackSingleCall(i);
                             break;
                         case 1:
-                            attackvisual.AttackSpecial(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
+                          
+                            SpecialAttackCall(i);
+
                             break;
                         case 2:
-
-                            attackvisual.AttackAOE(SelectedCharacter, enemyObjects, InitialPos, SelectedCharacterStats);
+                            AOEAttackCall();
 
                             break;
                     }

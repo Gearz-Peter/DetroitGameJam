@@ -62,6 +62,11 @@ public class AllyHealth : MonoBehaviour
     }
     public void DealDamage(int amout)
     {
+        if(amout <= 0)
+        {
+            return;
+        }
+
         if (Health > 0)
         {
 

@@ -10,8 +10,9 @@ public class TypeAction : MonoBehaviour
    
     string CurrentText;
 
-    [SerializeField] GameObject AttackHub,SwitcHub,ItemHub;
-    
+    [SerializeField] GameObject SwitcHub,ItemHub;
+    [SerializeField] GameObject SelectEnemyHub;
+    [SerializeField] GameObject[] AttackHubs;
 
     private void Update()
     {
@@ -36,8 +37,9 @@ public class TypeAction : MonoBehaviour
         switch (CurrentText)
         {
             case "attack":
+
                 GameObject.Find("WPMText").GetComponent<WordsPerMinute>().WordPassed();
-                AttackHub.SetActive(true);
+                AttackHubs[ SelectEnemyHub.GetComponent<SelectEnemyAction>().GetID() ].SetActive(true);
                 gameObject.SetActive(false);
                 break;
             case "switch":

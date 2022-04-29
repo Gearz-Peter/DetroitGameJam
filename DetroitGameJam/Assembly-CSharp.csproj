@@ -68,6 +68,7 @@
     <Compile Include="Assets\Henrique\Scripts\RatScripts\RadRat.cs" />
     <Compile Include="Assets\Henrique\Scripts\RatScripts\BasicRat.cs" />
     <Compile Include="Assets\Peter\Scripts\EnableDisable.cs" />
+    <Compile Include="Assets\Henrique\Scripts\RatScripts\NameSetter.cs" />
     <Compile Include="Assets\Henrique\Scripts\HenriqueDefaultScript.cs" />
     <Compile Include="Assets\Henrique\Scripts\CombatChecker.cs" />
     <Compile Include="Assets\Peter\Scripts\EnemyInformation.cs" />
@@ -100,7 +101,8 @@
     <Compile Include="Assets\Henrique\Scripts\RatScripts\RatAttackStats.cs" />
     <Compile Include="Assets\Peter\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Peter\Scripts\NPCPatrol.cs" />
-    <Compile Include="Assets\Henrique\Scripts\RatScripts\NameSetter.cs" />
+    <Compile Include="Assets\Henrique\Scripts\AllyID.cs" />
+    <Compile Include="Assets\Henrique\Scripts\AttackVisualsShanky.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

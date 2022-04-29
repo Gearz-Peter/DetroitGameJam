@@ -1,19 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-public class AttackingVisual : MonoBehaviour
+
+
+public class AttackVisualsShanky : MonoBehaviour
 {
-   
-
-
     IEnumerator AttackCoroutine, AttackSpecialCoroutine, AttackAOECoroutine;
     Vector2 BeforeInitialPos;
     GameObject SelectedCharacterBefore;
 
 
-    [SerializeField] GameObject[] WooshSound, NormalAttackSound;
-    [SerializeField] GameObject CoughAttackSound,BottleSound;
+    [SerializeField] GameObject[] WooshSound;
+    [SerializeField] GameObject BottleSound;
     [SerializeField] Transform AOEposition;
 
     [SerializeField] GameObject[] AttackAnimes;
@@ -39,7 +37,7 @@ public class AttackingVisual : MonoBehaviour
     {
 
 
-        Instantiate(WooshSound[Random.Range(0,WooshSound.Length)], transform.position, Quaternion.identity);
+        Instantiate(WooshSound[Random.Range(0, WooshSound.Length)], transform.position, Quaternion.identity);
         while (Vector2.Distance(SelectedCharacter.transform.position, enemyObject.transform.position) > 250)
         {
 
@@ -61,7 +59,7 @@ public class AttackingVisual : MonoBehaviour
             SelectedCharacter.transform.Rotate(0, 0, -10);
             yield return null;
 
-            if(i == 10)
+            if (i == 10)
             {
                 Instantiate(AttackAnimes[0], enemyObject.transform.position, Quaternion.identity, BattleCanvas.transform);
             }
@@ -69,7 +67,7 @@ public class AttackingVisual : MonoBehaviour
 
         BattleFieldShake.ShakeCamera(15f, .3f, 0.05f);
 
-        Instantiate(NormalAttackSound[Random.Range(0,NormalAttackSound.Length)], transform.position, Quaternion.identity);
+        Instantiate(BottleSound, transform.position, Quaternion.identity);
         enemyObject.GetComponent<EnemyHealth>().DealDamage(stats.BasicDamage);
 
         yield return new WaitForSeconds(.15f);
@@ -142,31 +140,31 @@ public class AttackingVisual : MonoBehaviour
             SelectedCharacter.transform.position = new Vector2(SelectedCharacter.transform.position.x + Random.Range(-15, 15), SelectedCharacter.transform.position.y + Random.Range(-15, 15));
             yield return new WaitForSeconds(0.01f);
             SelectedCharacter.transform.position = oldPos;
-            if(i == 20)
+            if (i == 20)
             {
                 Instantiate(AttackAnimes[1], enemyObject.transform.position, Quaternion.identity, BattleCanvas.transform);
             }
 
-                }
+        }
 
         BattleFieldShake.ShakeCamera(15f, .3f, 0.05f);
 
         Instantiate(BottleSound, transform.position, Quaternion.identity);
 
         enemyObject.GetComponent<EnemyHealth>().DealDamage(stats.SpecialDamage);
-        if(stats.Bleeding)
+        if (stats.Bleeding)
         {
             enemyObject.GetComponent<EnemyHealth>().ApplyBleed();
         }
 
         yield return new WaitForSeconds(.15f);
 
-        while (Vector2.Distance(SelectedCharacter.transform.position, InitialPos) > 50 )
+        while (Vector2.Distance(SelectedCharacter.transform.position, InitialPos) > 50)
         {
             SelectedCharacter.transform.position = Vector2.Lerp(SelectedCharacter.transform.position, InitialPos, 15 * Time.deltaTime);
             yield return null;
         }
-        
+
         SelectedCharacter.transform.position = InitialPos;
 
     }
@@ -206,42 +204,43 @@ public class AttackingVisual : MonoBehaviour
 
 
         Vector2 oldPos = SelectedCharacter.transform.position;
-        
-
-
-        while (SelectedCharacter.transform.eulerAngles.z < 45)
+        float RotateSpeed = 1;
+        for (int i = 0; i < 700; i++)
         {
-
-            SelectedCharacter.transform.Rotate(0, 0, 5);
-            yield return null;
-        }
-        yield return new WaitForSeconds(.15f);
-
-        for (int i = 0; i < 14; i++)
-        {
-            if(i==10)
+            SelectedCharacter.transform.Rotate(0, 0, 1 * RotateSpeed);
+            if (i == 200 || i == 400 || i == 600)
             {
-                Instantiate(CoughAttackSound, transform.position, Quaternion.identity);
-            }
-            SelectedCharacter.transform.Rotate(0, 0, -10);
-            yield return null;
+                Instantiate(WooshSound[Random.Range(0, WooshSound.Length)], transform.position, Quaternion.identity);
+                if (i == 600)
+                {
+                    for (int a = 0; a < enemyObject.Length; a++)
+                    {
+                        yield return new WaitForSeconds(0.05f);
 
-            
+                        Instantiate(AttackAnimes[2], enemyObject[a].transform.position, Quaternion.identity, BattleCanvas.transform);
+
+
+                    }
+                }
+
+
+
+            }
+
+            yield return null;
+            RotateSpeed += Time.deltaTime * 5;
         }
 
+        BattleFieldShake.ShakeCamera(15f, .3f, 0.05f);
 
-       // BattleFieldShake.ShakeCamera(15f, .3f, 0.05f);
-
-        for (int i=0;i<enemyObject.Length;i++)
+        for (int i = 0; i < enemyObject.Length; i++)
         {
             yield return new WaitForSeconds(0.05f);
-            
+            Instantiate(BottleSound, transform.position, Quaternion.identity);
 
 
 
             enemyObject[i].GetComponent<EnemyHealth>().DealDamage(stats.AOEDamage);
-            enemyObject[i].GetComponent<EnemyHealth>().ApplyCovid();
-
         }
 
 
@@ -258,7 +257,6 @@ public class AttackingVisual : MonoBehaviour
         SelectedCharacter.transform.position = InitialPos;
         SelectedCharacter.transform.rotation = new Quaternion(0, 0, 0, 0);
     }
-
 
 
 }
