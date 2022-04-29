@@ -118,19 +118,36 @@ public class BasicRat : MonoBehaviour
         }
         yield return new WaitForSeconds(.1f);
 
-        for (int i = 0; i < 40; i++)
+        float timeToHit = 0.1f;
+        while(timeToHit > 0.0f)
+        {
+            timeToHit -= Time.deltaTime;
+            SelectedCharacter.transform.Translate(-1, 0, 0);
+            yield return null;
+           
+        }
+     /*   for (int i = 0; i < 40; i++)
         {
             SelectedCharacter.transform.Translate(-1, 0, 0);
              yield return null;
-        }
+        }*/
         yield return new WaitForSeconds(.15f);
-
+        /*
         for (int i = 0; i < 40; i++)
         {
             SelectedCharacter.transform.Translate(1, 0, 0);
             yield return null;
         }
+        */
 
+        timeToHit = 0.1f;
+        while (timeToHit > 0.0f)
+        {
+            timeToHit -= Time.deltaTime;
+            SelectedCharacter.transform.Translate(1, 0, 0);
+            yield return null;
+
+        }
         GameObject DmgNumber = Instantiate(DamageNumberPrefab, SelectedCharacter.transform.position, Quaternion.identity, BattleCanvas.transform);
         DmgNumber.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 1) * 200, Random.Range(5, 6) * 150), ForceMode2D.Impulse);
 
