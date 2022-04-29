@@ -15,11 +15,11 @@ public class DoEnd : MonoBehaviour
     {
         if (collider.tag == "End")
         {
-            if (GameObject.FindWithTag("Player").GetComponent<Items>().QuestItems.Count >= 3)
+            if (GameObject.FindWithTag("Player").GetComponent<Items>().QuestItems.Count >= 4)
             {
                 endScreen.sprite = goodEnd;
             }
-            if (GameObject.FindWithTag("Player").GetComponent<Encounter>().ratsBeat >= 7)
+            if (GameObject.FindWithTag("Player").GetComponent<Encounter>().ratsBeat >= 15)
             {
                 endScreen.sprite = badEnd;
             }

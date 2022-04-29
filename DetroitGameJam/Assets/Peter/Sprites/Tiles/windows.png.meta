@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: 4de9735f5308d9942a51eb133376caed
+guid: f697a655dd8777b4a80965a69d70469c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2433294883196242628
-    second: Trash_0
+      213: 4515868832658927780
+    second: windows_0
   - first:
-      213: 8710820032630935801
-    second: Trash_1
+      213: -7713795743161397422
+    second: windows_1
   - first:
-      213: -4600943568829167164
-    second: Trash_2
+      213: -6518737003467913481
+    second: windows_2
   - first:
-      213: 6186020685950223539
-    second: Trash_3
+      213: -8918532497601255057
+    second: windows_3
   - first:
-      213: 8093046331458242966
-    second: Trash_4
+      213: 8973758733485966575
+    second: windows_4
   - first:
-      213: 552884712412909723
-    second: Trash_5
+      213: -5853800035867281755
+    second: windows_5
   - first:
-      213: -8491669589722576643
-    second: Trash_6
+      213: -1754359719619004334
+    second: windows_6
   - first:
-      213: 6066340198164708907
-    second: Trash_9
+      213: 7706862755151892207
+    second: windows_7
   - first:
-      213: 735196546323505269
-    second: Trash_12
-  - first:
-      213: 294980875059100238
-    second: Trash_7
+      213: -7249852516507362504
+    second: windows_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -76,7 +73,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 410
+  spritePixelsToUnits: 369
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +92,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -107,7 +104,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -121,160 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Trash_0
+      name: windows_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 59
-        width: 210
-        height: 170
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ca00baddccc4c120800000000000000
-      internalID: 2433294883196242628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trash_1
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 79
-        width: 170
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f0d253faac03e870800000000000000
-      internalID: 8710820032630935801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trash_2
-      rect:
-        serializedVersion: 2
-        x: 431
-        y: 79
-        width: 193
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c9c154733a2620c0800000000000000
-      internalID: -4600943568829167164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trash_3
-      rect:
-        serializedVersion: 2
-        x: 641
-        y: 80
-        width: 164
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b40847f90929d550800000000000000
-      internalID: 6186020685950223539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trash_4
-      rect:
-        serializedVersion: 2
-        x: 851
-        y: 79
-        width: 70
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 699c85972c6405070800000000000000
-      internalID: 8093046331458242966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trash_5
-      rect:
-        serializedVersion: 2
-        x: 941
-        y: 79
-        width: 60
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b909d1577bd3ca700800000000000000
-      internalID: 552884712412909723
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trash_6
-      rect:
-        serializedVersion: 2
-        x: 1031
-        y: 79
-        width: 120
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df8499abf77872a80800000000000000
-      internalID: -8491669589722576643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Trash_9
-      rect:
-        serializedVersion: 2
-        x: 1391
+        x: 9
         y: 9
-        width: 110
-        height: 180
+        width: 126
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2eb746f448ff2450800000000000000
-      internalID: 6066340198164708907
+      spriteID: 4a0b4e6f6c69bae30800000000000000
+      internalID: 4515868832658927780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trash_12
+      name: windows_1
       rect:
         serializedVersion: 2
-        x: 1231
-        y: 89
-        width: 20
-        height: 10
+        x: 144
+        y: 9
+        width: 126
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 570e4b71d51f33a00800000000000000
-      internalID: 735196546323505269
+      spriteID: 25fc1fa14a713f490800000000000000
+      internalID: -7713795743161397422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Trash_7
+      name: windows_2
       rect:
         serializedVersion: 2
-        x: 1159
-        y: 56
-        width: 203
-        height: 115
+        x: 279
+        y: 9
+        width: 126
+        height: 117
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,8 +174,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4a7e610b8bf71400800000000000000
-      internalID: 294980875059100238
+      spriteID: 7f6c91cab3bc885a0800000000000000
+      internalID: -6518737003467913481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 9
+        width: 126
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6923b222f10b3480800000000000000
+      internalID: -8918532497601255057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows_4
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 9
+        width: 126
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe48d79e502398c70800000000000000
+      internalID: 8973758733485966575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows_5
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 9
+        width: 126
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a636f3d1ef13cea0800000000000000
+      internalID: -5853800035867281755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows_6
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 9
+        width: 126
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258fad7412347a7e0800000000000000
+      internalID: -1754359719619004334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows_7
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 9
+        width: 126
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee4485d7d644fa60800000000000000
+      internalID: 7706862755151892207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: windows_8
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 9
+        width: 126
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b5b9f2c89536b90800000000000000
+      internalID: -7249852516507362504
       vertices: []
       indices: 
       edges: []
