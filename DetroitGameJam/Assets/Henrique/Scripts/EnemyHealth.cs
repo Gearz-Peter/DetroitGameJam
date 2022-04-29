@@ -128,10 +128,10 @@ public class EnemyHealth : MonoBehaviour
 
     IEnumerator FlashRedNumerator()
     {
-        Color oldColor = spriteI.color;
+        //Color oldColor = spriteI.color;
         spriteI.color = new Color(1, 0, 0, spriteI.color.a);
         yield return new WaitForSeconds(.3f);
-        spriteI.color = oldColor;
+        spriteI.color = new Color(1, 1, 1, spriteI.color.a);
     }
 
 
