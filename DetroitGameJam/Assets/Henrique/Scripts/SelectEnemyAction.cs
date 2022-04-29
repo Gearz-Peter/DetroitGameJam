@@ -55,8 +55,11 @@ public class SelectEnemyAction : MonoBehaviour
         int index = 0;
         for (int i = 0; i < Obs.Length; i++)
         {
-            ActiveObjs[index] = Obs[i].gameObject;
-            index++;
+          
+                ActiveObjs[index] = Obs[i].gameObject;
+                index++;
+            
+           
         }
         enemyObjects = ActiveObjs;
 
