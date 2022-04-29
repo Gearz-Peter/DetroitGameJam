@@ -53,39 +53,28 @@
     <UnityVersion>2020.3.29f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\Peter\Scripts\ItemInfo.cs" />
     <Compile Include="Assets\Peter\Scripts\Encounter.cs" />
-    <Compile Include="Assets\Henrique\Scripts\RatScripts\SusRat.cs" />
     <Compile Include="Assets\Main\Scripts\TransitionAnim.cs" />
     <Compile Include="Assets\Peter\Scripts\EndButton.cs" />
     <Compile Include="Assets\Henrique\Scripts\EnemyHealth.cs" />
-    <Compile Include="Assets\Henrique\Scripts\RatScripts\BuffRat.cs" />
     <Compile Include="Assets\Main\Scripts\WordsPerMinute.cs" />
     <Compile Include="Assets\Henrique\Scripts\ItemUsedAction.cs" />
     <Compile Include="Assets\Henrique\Scripts\RatScripts\KatanaRat.cs" />
     <Compile Include="Assets\Henrique\Scripts\AllyHealth.cs" />
-    <Compile Include="Assets\Henrique\Scripts\RatScripts\SewerRat.cs" />
     <Compile Include="Assets\Henrique\Scripts\RatScripts\RadRat.cs" />
     <Compile Include="Assets\Henrique\Scripts\RatScripts\BasicRat.cs" />
     <Compile Include="Assets\Peter\Scripts\EnableDisable.cs" />
     <Compile Include="Assets\Henrique\Scripts\RatScripts\NameSetter.cs" />
     <Compile Include="Assets\Henrique\Scripts\HenriqueDefaultScript.cs" />
-    <Compile Include="Assets\Henrique\Scripts\AttackVisualsShanky.cs" />
     <Compile Include="Assets\Henrique\Scripts\CombatChecker.cs" />
-    <Compile Include="Assets\Henrique\Scripts\RatScripts\BigRat.cs" />
     <Compile Include="Assets\Peter\Scripts\EnemyInformation.cs" />
     <Compile Include="Assets\Main\Scripts\CameraShake.cs" />
-    <Compile Include="Assets\Henrique\Scripts\AllyID.cs" />
     <Compile Include="Assets\Peter\Scripts\MenuButtonManager.cs" />
     <Compile Include="Assets\Henrique\Scripts\RatScripts\TrashRat.cs" />
     <Compile Include="Assets\Henrique\Scripts\AttackAction.cs" />
     <Compile Include="Assets\Main\Scripts\DefaultScript.cs" />
-    <Compile Include="Assets\Henrique\Scripts\AttackVisualsDog.cs" />
     <Compile Include="Assets\Henrique\Scripts\SelectEnemyAction.cs" />
-    <Compile Include="Assets\Main\Sounds\MusicSwitch.cs" />
     <Compile Include="Assets\Henrique\Scripts\Autodelete.cs" />
     <Compile Include="Assets\Peter\Scripts\EncounterInfo.cs" />
     <Compile Include="Assets\Main\Scripts\PauseMenu.cs" />
@@ -93,7 +82,6 @@
     <Compile Include="Assets\Peter\Scripts\NPCInformation.cs" />
     <Compile Include="Assets\Henrique\Scripts\AttackingVisual.cs" />
     <Compile Include="Assets\Peter\Scripts\CharacterInfo.cs" />
-    <Compile Include="Assets\Main\Assets\Guys\DisableDestroy.cs" />
     <Compile Include="Assets\Henrique\Scripts\EnemySetter.cs" />
     <Compile Include="Assets\Henrique\Scripts\AllyAttackStat.cs" />
     <Compile Include="Assets\Peter\Scripts\RatPatrol.cs" />
@@ -110,6 +98,15 @@
     <Compile Include="Assets\Henrique\Scripts\RatScripts\RatAttackStats.cs" />
     <Compile Include="Assets\Peter\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Peter\Scripts\NPCPatrol.cs" />
+    <Compile Include="Assets\Henrique\Scripts\AttackVisualsShanky.cs" />
+    <Compile Include="Assets\Henrique\Scripts\AllyID.cs" />
+    <Compile Include="Assets\Henrique\Scripts\AttackVisualsDog.cs" />
+    <Compile Include="Assets\Henrique\Scripts\RatScripts\SewerRat.cs" />
+    <Compile Include="Assets\Henrique\Scripts\RatScripts\BigRat.cs" />
+    <Compile Include="Assets\Henrique\Scripts\RatScripts\SusRat.cs" />
+    <Compile Include="Assets\Henrique\Scripts\RatScripts\BuffRat.cs" />
+    <Compile Include="Assets\Main\Assets\Guys\DisableDestroy.cs" />
+    <Compile Include="Assets\Main\Sounds\MusicSwitch.cs" />
     <Compile Include="Assets\Main\Sounds\FootStepSounds.cs" />
   </ItemGroup>
   <ItemGroup>
