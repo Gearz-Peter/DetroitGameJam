@@ -8,8 +8,8 @@ public class CombatChecker : MonoBehaviour
     [SerializeField] GameObject[] allyObjects, enemyObjects;
     [SerializeField] GameObject EnemyList;
     [SerializeField] TransitionAnim TransitionOBJ;
-    
 
+   
 
     private void OnEnable()
     {
@@ -103,7 +103,9 @@ public class CombatChecker : MonoBehaviour
         }
         else
         {
-            Debug.Log("You Lose");
+            GameObject.FindWithTag("LossCanvas").GetComponent<Canvas>().enabled = true;
+
+            
         }
 
 

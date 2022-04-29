@@ -16,7 +16,7 @@ public class WordsPerMinute : MonoBehaviour
 
     [SerializeField] Text WPMTextUI;
 
-
+    [SerializeField] GameObject SucessfullTypeSound, UnsucessfulSound;
     private void Update()
     {
         if(Input.anyKeyDown )
@@ -35,9 +35,13 @@ public class WordsPerMinute : MonoBehaviour
     {
         WPMList[Index] = (int)GrossWPM;
         Index++;
+
+        Instantiate(SucessfullTypeSound, transform.position, Quaternion.identity);
     }
     public void WordFail(int amoutChar)
     {
+        Instantiate(UnsucessfulSound, transform.position, Quaternion.identity);
+
         Entries -= amoutChar;
     }
 

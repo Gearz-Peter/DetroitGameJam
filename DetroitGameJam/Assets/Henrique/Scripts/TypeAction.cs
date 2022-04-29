@@ -13,6 +13,7 @@ public class TypeAction : MonoBehaviour
     [SerializeField] GameObject SwitcHub,ItemHub;
     [SerializeField] GameObject SelectEnemyHub;
     [SerializeField] GameObject[] AttackHubs;
+ 
 
     private void Update()
     {
