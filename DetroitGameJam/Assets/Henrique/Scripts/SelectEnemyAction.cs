@@ -126,6 +126,10 @@ public class SelectEnemyAction : MonoBehaviour
                 SelectedCharacter.GetComponentInChildren<AttackVisualsShanky>().AttackSingle(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
 
                 break;
+            case 2:
+                SelectedCharacter.GetComponentInChildren<AttackVisualsDog>().AttackSingle(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
+
+                break;
         }
 
     }
@@ -142,6 +146,11 @@ public class SelectEnemyAction : MonoBehaviour
 
             case 1:
                 SelectedCharacter.GetComponentInChildren<AttackVisualsShanky>().AttackSpecial(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
+
+                break;
+
+            case 2:
+                SelectedCharacter.GetComponentInChildren<AttackVisualsDog>().AttackSpecial(SelectedCharacter, enemyObjects[i], InitialPos, SelectedCharacterStats);
 
                 break;
         }
@@ -162,6 +171,11 @@ public class SelectEnemyAction : MonoBehaviour
                 SelectedCharacter.GetComponentInChildren<AttackVisualsShanky>().AttackAOE(SelectedCharacter, enemyObjects, InitialPos, SelectedCharacterStats);
 
                 break;
+            case 2:
+                SelectedCharacter.GetComponentInChildren<AttackVisualsDog>().AttackAOE(SelectedCharacter, enemyObjects, InitialPos, SelectedCharacterStats);
+
+                break;
+
         }
 
 

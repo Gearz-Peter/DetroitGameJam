@@ -2473,6 +2473,8 @@ MonoBehaviour:
   HealCrossPrefab: {fileID: 223393439602460371, guid: d84df538d3ee8924ca334751d9857abd, type: 3}
   HealNumberPrefab: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
   BattleCanvas: {fileID: 2870490017522041097}
+  PlusAttackPrefab: {fileID: 5032936492546244727, guid: cdf2d9db9b9ddca44825ce243a40a737, type: 3}
+  UpArrowsPrefab: {fileID: 223393439602460371, guid: fb62735b4a4bea4498b70b658e1eb6f8, type: 3}
 --- !u!114 &2870490016054000223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3007,6 +3009,7 @@ RectTransform:
   - {fileID: 2870490016869521529}
   - {fileID: 2870490017002375406}
   - {fileID: 7249940701972288847}
+  - {fileID: 8994779493098525011}
   m_Father: {fileID: 2870490017968447837}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3045,6 +3048,8 @@ MonoBehaviour:
   HealCrossPrefab: {fileID: 223393439602460371, guid: d84df538d3ee8924ca334751d9857abd, type: 3}
   HealNumberPrefab: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
   BattleCanvas: {fileID: 2870490017522041097}
+  PlusAttackPrefab: {fileID: 5032936492546244727, guid: cdf2d9db9b9ddca44825ce243a40a737, type: 3}
+  UpArrowsPrefab: {fileID: 223393439602460371, guid: fb62735b4a4bea4498b70b658e1eb6f8, type: 3}
 --- !u!114 &2870490016214890168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3598,6 +3603,8 @@ MonoBehaviour:
   HealCrossPrefab: {fileID: 223393439602460371, guid: d84df538d3ee8924ca334751d9857abd, type: 3}
   HealNumberPrefab: {fileID: 5032936492546244727, guid: 289612bf3ac31df43aba0c65ef4f1f49, type: 3}
   BattleCanvas: {fileID: 2870490017522041097}
+  PlusAttackPrefab: {fileID: 5032936492546244727, guid: cdf2d9db9b9ddca44825ce243a40a737, type: 3}
+  UpArrowsPrefab: {fileID: 223393439602460371, guid: fb62735b4a4bea4498b70b658e1eb6f8, type: 3}
 --- !u!114 &3433700919853400122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5019,12 +5026,11 @@ MonoBehaviour:
   - {fileID: 2870490016245006921}
   - {fileID: 2870490017080871014}
   - {fileID: 2870490017232335529}
-  AttackHub: {fileID: 2870490016158547602}
   MainHub: {fileID: 2870490017496289573}
+  AttackHubs: []
   SelectedCharacter: {fileID: 2870490016374243939}
   SelectedCharacterStats: {fileID: 2870490016374243967}
   attackvisual: {fileID: 2870490017357048676}
-  AttackActionHud: {fileID: 2870490016158547600}
   AttackType: 0
   EnemyList: {fileID: 2870490016314841710}
 --- !u!1 &2870490016899707519
@@ -12075,6 +12081,72 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: bark
+--- !u!1 &8964322638369358456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8994779493098525011}
+  - component: {fileID: 532355583781199479}
+  m_Layer: 5
+  m_Name: AttackVisuals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8994779493098525011
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964322638369358456}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2870490016214890173}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 773, y: -323}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &532355583781199479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964322638369358456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118b17a4ad494844abf99c317e047341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WooshSound:
+  - {fileID: 5755787036683186265, guid: b9290f7f5d99a434b93053fa1ae0d669, type: 3}
+  - {fileID: 2435037802008786525, guid: aa43f2be9a769c84ea75154c3bc7af81, type: 3}
+  - {fileID: 7560692987367025968, guid: a0e78627d0b8d124295a92b5f382656f, type: 3}
+  DogSounds:
+  - {fileID: 8354347785577309005, guid: 8cbc894cb202e4544be722b65e13b978, type: 3}
+  AOEposition: {fileID: 2870490016604438040}
+  MetalSound: {fileID: 635669853846285719, guid: 680741050d01d5b4580923b09be340e4, type: 3}
+  AttackAnimes:
+  - {fileID: 2293848317934768634, guid: d7c069913e1c01b4487a5df3bdd56f2b, type: 3}
+  - {fileID: 6048083485076476928, guid: 2ced5a270ec7e4645a362c12c7db3e79, type: 3}
+  - {fileID: 2076323888248822173, guid: e07ca807cc962c947bbc29b1abffd183, type: 3}
+  BattleCanvas: {fileID: 2870490017522041097}
+  BattleFieldShake: {fileID: 6444343314097925950}
+  allieObjects:
+  - {fileID: 2870490016374243939}
+  - {fileID: 2870490016054000195}
+  - {fileID: 2870490016214890172}
 --- !u!1 &8992416016911165315
 GameObject:
   m_ObjectHideFlags: 0

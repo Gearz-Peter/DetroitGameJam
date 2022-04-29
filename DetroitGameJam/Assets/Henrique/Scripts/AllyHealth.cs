@@ -15,7 +15,11 @@ public class AllyHealth : MonoBehaviour
     [SerializeField] GameObject HealCrossPrefab;
     [SerializeField] GameObject HealNumberPrefab;
     [SerializeField] GameObject BattleCanvas;
+    [SerializeField] GameObject PlusAttackPrefab;
+    [SerializeField] GameObject UpArrowsPrefab;
 
+      int TemporaryAttackGains;
+   
     IEnumerator ShakeNumerator()
     {
         float ShakeAmout = 4;
@@ -41,6 +45,7 @@ public class AllyHealth : MonoBehaviour
 
     private void OnEnable()
     {
+        TemporaryAttackGains = 0;
         Health = MaxHealth;
         HealthSlider.maxValue = MaxHealth;
         HealthSlider.value = Health;
@@ -108,7 +113,40 @@ public class AllyHealth : MonoBehaviour
         }
     }
 
+    public void IncreaseAttackTemporary(int amout)
+    {
+        if(Health > 0)
+        {
+            GameObject DmgNumber = Instantiate(PlusAttackPrefab, gameObject.transform.position, Quaternion.identity, BattleCanvas.transform);
+            DmgNumber.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-1, 1) * 200, Random.Range(5, 6) * 150), ForceMode2D.Impulse);
 
+            DmgNumber.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-5, 5) * 23000);
+            DmgNumber.GetComponent<Text>().text = "+" + amout;
+
+            for (int i = 0; i < 3; i++)
+            {
+                Instantiate(UpArrowsPrefab, new Vector3(transform.position.x + Random.Range(-200, 200), transform.position.y + Random.Range(50, 100), transform.position.z), Quaternion.identity, BattleCanvas.transform);
+            }
+
+            GetComponent<AllyAttackStat>().BasicDamage += amout;
+            GetComponent<AllyAttackStat>().SpecialDamage += amout;
+            GetComponent<AllyAttackStat>().AOEDamage += amout;
+            TemporaryAttackGains += amout;
+        }
+       
+
+    }
+
+
+
+
+    private void OnDisable()
+    {
+
+        GetComponent<AllyAttackStat>().BasicDamage -= TemporaryAttackGains;
+        GetComponent<AllyAttackStat>().SpecialDamage -= TemporaryAttackGains;
+        GetComponent<AllyAttackStat>().AOEDamage -= TemporaryAttackGains;
+    }
 
     public void Heal(int amout)
     {
